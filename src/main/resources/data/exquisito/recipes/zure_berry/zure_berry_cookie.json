@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:zure_berry"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_zure_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:crops/wheat"
+    },
+    "B": {
+      "item": "enlightened_end:zure_berry"
+    }
+  },
+  "result": {
+    "item": "exquisito:zure_berry_cookie",
+    "count": 8
+  }
+}

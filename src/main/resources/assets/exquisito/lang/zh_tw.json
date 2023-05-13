@@ -1,0 +1,34 @@
+{
+    "block.exquisito.chorus_ice_cream_block": "歌萊冰淇淋方塊",
+    "block.exquisito.jelly_ring_ice_cream_block": "甜膠環冰淇淋方塊",
+    "block.exquisito.zure_berry_ice_cream_block": "天藍莓冰淇淋方塊",
+
+    "block.exquisito.chorus_cake": "歌萊蛋糕",
+    "block.exquisito.jelly_ring_cake": "甜膠環蛋糕",
+    "block.exquisito.zure_berry_cake": "天藍莓蛋糕",
+
+    "effect.exquisito.fuchsia_goo": "品紅粘質",
+    "effect.exquisito.fuchsia_goo.description": "該狀態通過近戰攻擊在生物間傳播，以降低移動速度為代價減免宿主所受傷害，當其持續時間結束時宿主將被垂直彈出",
+    "effect.exquisito.resonance": "共鳴",
+    "effect.exquisito.resonance.description": "當效果持有者對生物造成傷害時，同其調換位置",
+    "effect.exquisito.space_diving": "深空俯潛",
+    "effect.exquisito.space_diving.description": "當效果持有者受到摔落傷害時，令其免於因此次傷害而死並轟飛著陸點周邊生物",
+
+    "item.exquisito.chorus_ice_cream": "歌萊冰淇淋",
+    "item.exquisito.chorus_cake": "歌萊蛋糕",
+    "item.exquisito.chorus_milkshake": "歌萊奶昔",
+    "item.exquisito.chorus_cookie": "歌萊餅乾",
+
+    "item.exquisito.jelly_ring_ice_cream": "甜膠環冰淇淋",
+    "item.exquisito.jelly_ring_cake": "甜膠環蛋糕",
+    "item.exquisito.jelly_ring_milkshake": "甜膠環奶昔",
+    "item.exquisito.jelly_ring_cookie": "甜膠環餅乾",
+
+    "item.exquisito.zure_berry_ice_cream": "天藍莓冰淇淋",
+    "item.exquisito.zure_berry_cake": "天藍莓蛋糕",
+    "item.exquisito.zure_berry_milkshake": "天藍莓奶昔",
+    "item.exquisito.zure_berry_cookie": "天藍莓餅乾",
+
+    "item.exquisito.battenberg_cake": "巴滕伯格蛋糕",
+    "item.exquisito.chocolate_ringling": "巧克力環靈"
+}

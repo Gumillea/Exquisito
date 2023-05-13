@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:jelly_ring_item"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_jelly_ring_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:crops/wheat"
+    },
+    "B": {
+      "item": "enlightened_end:jelly_ring_item"
+    }
+  },
+  "result": {
+    "item": "exquisito:jelly_ring_cookie",
+    "count": 8
+  }
+}

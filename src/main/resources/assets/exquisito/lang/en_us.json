@@ -1,0 +1,34 @@
+{
+    "block.exquisito.chorus_ice_cream_block": "Chorus Ice Cream Block",
+    "block.exquisito.jelly_ring_ice_cream_block": "Jelly Ring Ice Cream Block",
+    "block.exquisito.zure_berry_ice_cream_block": "Zure Berry Ice Cream Block",
+
+    "block.exquisito.chorus_cake": "Chorus Cake",
+    "block.exquisito.jelly_ring_cake": "Jelly Ring Cake",
+    "block.exquisito.zure_berry_cake": "Zure Berry Cake",
+
+    "effect.exquisito.fuchsia_goo": "Fuchsia Goo",
+    "effect.exquisito.fuchsia_goo.description": "This effect spreads between mobs through melee attack, protecting the host from almost all damage at the cost of slowing their movement speed. When the duration ends, the host will be ejected vertically.",
+    "effect.exquisito.resonance": "Resonance",
+    "effect.exquisito.resonance.description": "The user will swaps positions with the attack target.",
+    "effect.exquisito.space_diving": "Space Diving",
+    "effect.exquisito.space_diving.description": "When the user takes fall damage, creating a ranged strike around the landing site and saving the player from falling to death if necessary.",
+
+    "item.exquisito.chorus_ice_cream": "Chorus Ice Cream",
+    "item.exquisito.chorus_cake": "Chorus Cake",
+    "item.exquisito.chorus_milkshake": "Chorus Milkshake",
+    "item.exquisito.chorus_cookie": "Chorus Cookie",
+
+    "item.exquisito.jelly_ring_ice_cream": "Jelly Ring Ice Cream",
+    "item.exquisito.jelly_ring_cake": "Jelly Ring Cake",
+    "item.exquisito.jelly_ring_milkshake": "Jelly Ring Milkshake",
+    "item.exquisito.jelly_ring_cookie": "Jelly Ring Cookie",
+
+    "item.exquisito.zure_berry_ice_cream": "Zure Berry Ice Cream",
+    "item.exquisito.zure_berry_cake": "Zure Berry Cake",
+    "item.exquisito.zure_berry_milkshake": "Zure Berry Milkshake",
+    "item.exquisito.zure_berry_cookie": "Zure Berry Cookie",
+
+    "item.exquisito.battenberg_cake": "Battenberg Cake",
+    "item.exquisito.chocolate_ringling": "Chocolate Ringling"
+}

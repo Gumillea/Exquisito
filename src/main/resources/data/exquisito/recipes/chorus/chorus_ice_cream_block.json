@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_chorus_flavor"
+    }
+  ],
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "X": {
+      "item": "exquisito:chorus_ice_cream"
+    },
+    "#": {
+      "item": "minecraft:snow_block"
+    }
+  },
+  "result": {
+    "item": "exquisito:chorus_ice_cream_block",
+    "count": 8
+  }
+}
