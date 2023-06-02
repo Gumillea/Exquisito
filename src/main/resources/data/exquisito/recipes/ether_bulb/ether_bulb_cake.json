@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:ether_bulbs"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_ether_bulb_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "ADA",
+    "BEB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:milk"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:wheat"
+    },
+    "D": {
+      "item": "byg:ether_bulbs"
+    },
+    "E": {
+      "tag": "forge:eggs"
+    }
+  },
+  "result": {
+    "item": "exquisito:ether_bulb_cake"
+  }
+}

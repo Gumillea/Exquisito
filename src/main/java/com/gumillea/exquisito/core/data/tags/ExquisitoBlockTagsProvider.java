@@ -18,7 +18,9 @@ public class ExquisitoBlockTagsProvider extends BlockTagsProvider {
     public void addTags() {
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(
                 ExquisitoBlocks.CHORUS_ICE_CREAM_BLOCK.get(),
+                ExquisitoBlocks.ETHER_BULB_ICE_CREAM_BLOCK.get(),
                 ExquisitoBlocks.JELLY_RING_ICE_CREAM_BLOCK.get(),
+                ExquisitoBlocks.NIGHTSHADE_BERRY_ICE_CREAM_BLOCK.get(),
                 ExquisitoBlocks.ZURE_BERRY_ICE_CREAM_BLOCK.get()
         );
         this.tag(ExquisitoBlockTags.ENNEGEL_REPLACEABLE)

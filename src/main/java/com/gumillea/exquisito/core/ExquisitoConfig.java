@@ -26,12 +26,17 @@ public class ExquisitoConfig {
         public static ForgeConfigSpec.BooleanValue JELLY_RING_FLAVOR;
         @ConfigKey("enable_zure_berry_flavor")
         public static ForgeConfigSpec.BooleanValue ZURE_BERRY_FLAVOR;
+        @ConfigKey("enable_ether_bulb_flavor")
+        public static ForgeConfigSpec.BooleanValue ETHER_BULB_FLAVOR;
+        @ConfigKey("enable_nightshade_berry_flavor")
+        public static ForgeConfigSpec.BooleanValue NIGHTSHADE_BERRY_FLAVOR;
         public static ForgeConfigSpec.BooleanValue FUCHSIA_GOO_SPREAD;
         public static ForgeConfigSpec.BooleanValue SPACE_DIVING_LIMITATION;
         public static ForgeConfigSpec.BooleanValue FOOD_MODIFICATION;
         public static ForgeConfigSpec.BooleanValue ENLIGHTEND_MODIFICATION;
         public static ForgeConfigSpec.BooleanValue ENDS_DELIGHT_MODIFICATION;
         public static ForgeConfigSpec.BooleanValue UNUSUAL_END_MODIFICATION;
+        public static ForgeConfigSpec.BooleanValue BYG_MODIFICATION;
 
         Common(ForgeConfigSpec.Builder builder) {
         builder.push("Flavors");
@@ -39,8 +44,14 @@ public class ExquisitoConfig {
         CHORUS_FLAVOR = builder.comment("Whether to enable the Chorus Fruit flavor.").define("Chorus Flavor", true);
         builder.pop();
         builder.push("Compatible Flavors");
-        JELLY_RING_FLAVOR = builder.comment("Whether to enable the Jelly Ring flavor. (Requires Enlightend)").define("Jelly Ring Flavor", true);
-        ZURE_BERRY_FLAVOR = builder.comment("Whether to enable the Zure Berry flavor. (Requires Enlightend)").define("Zure Berry Flavor", true);
+        builder.push("Enlightend Flavors");
+        JELLY_RING_FLAVOR = builder.comment("Whether to enable the Jelly Ring flavor.").define("Jelly Ring Flavor", true);
+        ZURE_BERRY_FLAVOR = builder.comment("Whether to enable the Zure Berry flavor.").define("Zure Berry Flavor", true);
+        builder.pop();
+        builder.push("Oh The Biomes You'll Go Flavors");
+        ETHER_BULB_FLAVOR = builder.comment("Whether to enable the Ether Bulb flavor.").define("Ether Bulb Flavor", true);
+        NIGHTSHADE_BERRY_FLAVOR = builder.comment("Whether to enable the Nightshade Berry flavor.").define("Nightshade Berry Flavor", true);
+        builder.pop();
         builder.pop();
         builder.pop();
         builder.push("Effects");
@@ -55,6 +66,7 @@ public class ExquisitoConfig {
         ENLIGHTEND_MODIFICATION = builder.comment("Whether to enable the modifications for Enlightend.").define("Enlightend Modification", true);
         ENDS_DELIGHT_MODIFICATION = builder.comment("Whether to enable the modifications for End's Delight.").define("End's Delight Compatibility", true);
         UNUSUAL_END_MODIFICATION = builder.comment("Whether to enable the modifications for Unusual End.").define("Unusual End Compatibility", true);
+        BYG_MODIFICATION = builder.comment("Whether to enable the modifications for Oh The Biomes You'll Go.").define("Oh The Biomes You'll Go Compatibility", true);
         builder.pop();
         builder.pop();
         }

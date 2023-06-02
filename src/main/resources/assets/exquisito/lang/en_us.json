@@ -1,14 +1,20 @@
 {
     "block.exquisito.chorus_ice_cream_block": "Chorus Ice Cream Block",
+    "block.exquisito.ether_bulb_ice_cream_block": "Ether Bulb Ice Cream Block",
     "block.exquisito.jelly_ring_ice_cream_block": "Jelly Ring Ice Cream Block",
+    "block.exquisito.nightshade_berry_ice_cream_block": "Nightshade Berry Ice Cream Block",
     "block.exquisito.zure_berry_ice_cream_block": "Zure Berry Ice Cream Block",
 
     "block.exquisito.chorus_cake": "Chorus Cake",
+    "block.exquisito.ether_bulb_cake": "Ether Bulb Cake",
     "block.exquisito.jelly_ring_cake": "Jelly Ring Cake",
+    "block.exquisito.nightshade_berry_cake": "Nightshade Berry Cake",
     "block.exquisito.zure_berry_cake": "Zure Berry Cake",
 
+    "effect.exquisito.earendel": "Earendel",
     "effect.exquisito.fuchsia_goo": "Fuchsia Goo",
     "effect.exquisito.fuchsia_goo.description": "This effect spreads between mobs through melee attack, protecting the host from almost all damage at the cost of slowing their movement speed. When the duration ends, the host will be ejected vertically.",
+    "effect.exquisito.morgoth": "Morgoth",
     "effect.exquisito.resonance": "Resonance",
     "effect.exquisito.resonance.description": "The user will swaps positions with the attack target.",
     "effect.exquisito.space_diving": "Space Diving",
@@ -16,16 +22,31 @@
 
     "item.exquisito.chorus_ice_cream": "Chorus Ice Cream",
     "item.exquisito.chorus_cake": "Chorus Cake",
+    "item.exquisito.chorus_cake_slice": "Chorus Cake Slice",
     "item.exquisito.chorus_milkshake": "Chorus Milkshake",
     "item.exquisito.chorus_cookie": "Chorus Cookie",
 
+    "item.exquisito.ether_bulb_ice_cream": "Ether Bulb Ice Cream",
+    "item.exquisito.ether_bulb_cake": "Ether Bulb Cake",
+    "item.exquisito.ether_bulb_cake_slice": "Ether Bulb Cake Slice",
+    "item.exquisito.ether_bulb_parfait": "Ether Bulb Parfait",
+    "item.exquisito.ether_bulb_cookie": "Ether Bulb Cookie",
+
     "item.exquisito.jelly_ring_ice_cream": "Jelly Ring Ice Cream",
     "item.exquisito.jelly_ring_cake": "Jelly Ring Cake",
+    "item.exquisito.jelly_ring_cake_slice": "Jelly Ring Cake Slice",
     "item.exquisito.jelly_ring_milkshake": "Jelly Ring Milkshake",
     "item.exquisito.jelly_ring_cookie": "Jelly Ring Cookie",
 
+    "item.exquisito.nightshade_berry_ice_cream": "Nightshade Berry Ice Cream",
+    "item.exquisito.nightshade_berry_cake": "Nightshade Berry Cake",
+    "item.exquisito.nightshade_berry_cake_slice": "Nightshade Berry Cake Slice",
+    "item.exquisito.nightshade_berry_parfait": "Nightshade Berry Parfait",
+    "item.exquisito.nightshade_berry_cookie": "Nightshade Berry Cookie",
+
     "item.exquisito.zure_berry_ice_cream": "Zure Berry Ice Cream",
     "item.exquisito.zure_berry_cake": "Zure Berry Cake",
+    "item.exquisito.zure_berry_cake_slice": "Zure Berry Cake Slice",
     "item.exquisito.zure_berry_milkshake": "Zure Berry Milkshake",
     "item.exquisito.zure_berry_cookie": "Zure Berry Cookie",
 

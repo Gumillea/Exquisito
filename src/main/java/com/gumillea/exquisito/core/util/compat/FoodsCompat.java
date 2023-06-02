@@ -23,6 +23,7 @@ public class FoodsCompat {
         List<FoodProperties> chorusFoods = new ArrayList<>();
         MobEffect resonance = ExquisitoEffects.RESONANCE.get();
         MobEffect fg = ExquisitoEffects.FUCHSIA_GOO.get();
+        MobEffect m = ExquisitoEffects.MORGOTH.get();
 
         if (ExquisitoConfig.Common.FOOD_MODIFICATION.get()) {
             chorusFoods.add(Foods.CHORUS_FRUIT);
@@ -67,6 +68,20 @@ public class FoodsCompat {
                         Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.UE, "ender_stew"))).foodProperties
                 );
                 chorusFoods.addAll(unusualEndFoods);
+            }
+
+            if (ModList.get().isLoaded(ModCompat.B) && ExquisitoConfig.Common.BYG_MODIFICATION.get()) {
+                Objects.requireNonNull(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.B, "ether_bulbs")))
+                        .foodProperties).effects.add(Pair.of(() -> new MobEffectInstance(ExquisitoEffects.EARENDEL.get(), 200), 1.0F));
+                Objects.requireNonNull(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.B, "nightshade_berries")))
+                        .foodProperties).effects.add(Pair.of(() -> new MobEffectInstance(m, 200), 1.0F));
+                Objects.requireNonNull(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.B, "nightshade_berry_pie")))
+                        .foodProperties).effects.add(Pair.of(() -> new MobEffectInstance(m, 200,1), 1.0F));
+
+                if (ModList.get().isLoaded(ModCompat.DF)) {
+                    Objects.requireNonNull(Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.B, "nightshade_berry_pie_slice")))
+                            .foodProperties).effects.add(Pair.of(() -> new MobEffectInstance(m, 400), 1.0F));
+                }
             }
 
             for (FoodProperties properties : chorusFoods) {

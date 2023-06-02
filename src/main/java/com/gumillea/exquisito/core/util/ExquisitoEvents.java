@@ -1,7 +1,5 @@
 package com.gumillea.exquisito.core.util;
 
-import cn.foggyhillside.endsdelight.registry.BlockRegistry;
-import cn.foggyhillside.endsdelight.registry.ItemRegistry;
 import com.gumillea.exquisito.core.Exquisito;
 import com.gumillea.exquisito.core.ExquisitoConfig;
 import com.gumillea.exquisito.core.reg.ExquisitoEffects;
@@ -22,7 +20,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
@@ -32,9 +29,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
 import net.minecraftforge.event.entity.living.LivingDamageEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.entity.living.MobEffectEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
@@ -104,20 +99,17 @@ public class ExquisitoEvents {
         if (event.getSource() == DamageSource.FALL && target.getEffect(ExquisitoEffects.SPACE_DIVING.get()) != null) {
             int amplifier = target.getEffect(ExquisitoEffects.SPACE_DIVING.get()).getAmplifier() + 1;
             float fallDistance = target.fallDistance;
-            Collection<LivingEntity> effectrange = world.getNearbyEntities(LivingEntity.class, TargetingConditions.DEFAULT.selector((livingEntity) -> livingEntity != target),
-                    target, target.getBoundingBox().inflate(target.getBbWidth() + amplifier * 6.0D + fallDistance * 0.15D, target.getBbHeight() * 2.0D, target.getBbWidth() + amplifier * 6.0D + fallDistance * 0.15D));
-            if (!effectrange.isEmpty()) {
-                for (LivingEntity targets : effectrange) {
-                    if (fallDistance < 10 && ExquisitoConfig.Common.SPACE_DIVING_LIMITATION.get()) {
-                        target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.NEUTRAL, 0.3F, 3.5F);
-                        targets.hurt(DamageSource.explosion(target), (fallDistance * (0.25F + amplifier * 0.15F)));
-                        targets.push(0, 0.4D, 0);
-                    } else {
-                        target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.NEUTRAL, 0.5F, 2.5F);
-                        targets.hurt(DamageSource.explosion(target), (fallDistance * (0.5F + amplifier * 0.15F)));
-                        targets.push(0, 0.6D, 0);
-                        targets.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40 + (amplifier * 20)));
-                    }
+            for (LivingEntity targets : world.getNearbyEntities(LivingEntity.class, TargetingConditions.DEFAULT.selector((livingEntity) -> livingEntity != target),
+                    target, target.getBoundingBox().inflate(target.getBbWidth() + amplifier * 6.0D + fallDistance * 0.15D, target.getBbHeight() * 2.0D, target.getBbWidth() + amplifier * 6.0D + fallDistance * 0.15D))) {
+                if (fallDistance < 10 && ExquisitoConfig.Common.SPACE_DIVING_LIMITATION.get()) {
+                    target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.NEUTRAL, 0.3F, 3.5F);
+                    targets.hurt(DamageSource.explosion(target), (fallDistance * (0.25F + amplifier * 0.15F)));
+                    targets.push(0, 0.4D, 0);
+                } else {
+                    target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.NEUTRAL, 0.5F, 2.5F);
+                    targets.hurt(DamageSource.explosion(target), (fallDistance * (0.5F + amplifier * 0.15F)));
+                    targets.push(0, 0.6D, 0);
+                    targets.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40 + (amplifier * 20)));
                 }
             }
             if (damage >= health) {
@@ -150,15 +142,13 @@ public class ExquisitoEvents {
 
         Collection<LivingEntity> effectrange = world.getNearbyEntities(LivingEntity.class, TargetingConditions.DEFAULT.selector((living) -> living != entity),
                 entity, entity.getBoundingBox().inflate(4.0D, entity.getBbHeight() * 2.0D, 4.0D));
-        if (!effectrange.isEmpty()) {
-            for (LivingEntity targets : effectrange) {
-                int duration = entity.getEffect(ExquisitoEffects.FUCHSIA_GOO.get()).getDuration() / effectrange.size();
-                if (targets.getEffect(ExquisitoEffects.FUCHSIA_GOO.get()) != null) {
-                    MobEffectInstance fg = targets.getEffect(ExquisitoEffects.FUCHSIA_GOO.get());
-                    targets.addEffect(new MobEffectInstance(ExquisitoEffects.FUCHSIA_GOO.get(), fg.getDuration() + duration, fg.getAmplifier() + amplifier));
-                } else {
+        for (LivingEntity targets : effectrange) {
+            int duration = entity.getEffect(ExquisitoEffects.FUCHSIA_GOO.get()).getDuration() / effectrange.size();
+            if (targets.getEffect(ExquisitoEffects.FUCHSIA_GOO.get()) != null) {
+                MobEffectInstance fg = targets.getEffect(ExquisitoEffects.FUCHSIA_GOO.get());
+                targets.addEffect(new MobEffectInstance(ExquisitoEffects.FUCHSIA_GOO.get(), fg.getDuration() + duration, fg.getAmplifier() + amplifier));
+            } else {
                 targets.addEffect(new MobEffectInstance(ExquisitoEffects.FUCHSIA_GOO.get(), duration, amplifier - 1));
-                }
             }
         }
         for (int i = 0; i < 16 + amplifier * 2; ++i) {

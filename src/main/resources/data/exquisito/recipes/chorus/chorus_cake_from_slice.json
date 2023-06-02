@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "exquisito:config",
+          "value": "enable_chorus_flavor"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:chorus_cake_slice"
+    },
+    {
+      "item": "exquisito:chorus_cake_slice"
+    },
+    {
+      "item": "exquisito:chorus_cake_slice"
+    },
+    {
+      "item": "exquisito:chorus_cake_slice"
+    },
+    {
+      "item": "exquisito:chorus_cake_slice"
+    },
+    {
+      "item": "exquisito:chorus_cake_slice"
+    },
+    {
+      "item": "exquisito:chorus_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "exquisito:chorus_cake"
+  }
+}

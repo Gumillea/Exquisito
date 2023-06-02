@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:ether_bulbs"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_ether_bulb_flavor"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    },
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    },
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    },
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    },
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    },
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    },
+    {
+      "item": "exquisito:ether_bulb_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "exquisito:ether_bulb_cake"
+  }
+}

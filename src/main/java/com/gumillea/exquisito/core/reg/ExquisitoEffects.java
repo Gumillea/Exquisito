@@ -1,6 +1,8 @@
 package com.gumillea.exquisito.core.reg;
 
+import com.gumillea.exquisito.common.effect.EarendelEffect;
 import com.gumillea.exquisito.common.effect.FuchsiaGooEffect;
+import com.gumillea.exquisito.common.effect.MorgothEffect;
 import com.gumillea.exquisito.core.Exquisito;
 import com.teamabnormals.blueprint.common.effect.BlueprintMobEffect;
 import net.minecraft.world.effect.MobEffect;
@@ -11,7 +13,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ExquisitoEffects {
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Exquisito.MODID);
+    public static final RegistryObject<MobEffect> EARENDEL = EFFECTS.register("earendel", EarendelEffect::new);
     public static final RegistryObject<MobEffect> FUCHSIA_GOO = EFFECTS.register("fuchsia_goo", FuchsiaGooEffect::new);
+    public static final RegistryObject<MobEffect> MORGOTH = EFFECTS.register("morgoth", MorgothEffect::new);
     public static final RegistryObject<MobEffect> RESONANCE = EFFECTS.register("resonance", () -> new BlueprintMobEffect(MobEffectCategory.NEUTRAL, 0xBA9BBA));
     public static final RegistryObject<MobEffect> SPACE_DIVING = EFFECTS.register("space_diving", () -> new BlueprintMobEffect(MobEffectCategory.BENEFICIAL, 0x5ED5E2));
 

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:ether_bulbs"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_ether_bulb_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "byg:ether_bulbs"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "neapolitan:ice_cubes"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "exquisito:ether_bulb_ice_cream"
+  }
+}

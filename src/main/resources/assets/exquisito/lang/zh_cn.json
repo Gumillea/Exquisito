@@ -1,14 +1,20 @@
 {
     "block.exquisito.chorus_ice_cream_block": "紫颂冰淇淋块",
+    "block.exquisito.ether_bulb_ice_cream_block": "以太球果冰淇淋块",
     "block.exquisito.jelly_ring_ice_cream_block": "甜胶环冰淇淋块",
+    "block.exquisito.nightshade_berry_ice_cream_block": "夜影浆果冰淇淋块",
     "block.exquisito.zure_berry_ice_cream_block": "天蓝莓冰淇淋块",
 
     "block.exquisito.chorus_cake": "紫颂蛋糕",
+    "block.exquisito.ether_bulb_cake": "以太球果蛋糕",
     "block.exquisito.jelly_ring_cake": "甜胶环蛋糕",
+    "block.exquisito.nightshade_berry_cake": "夜影浆果蛋糕",
     "block.exquisito.zure_berry_cake": "天蓝莓蛋糕",
 
+    "effect.exquisito.earendel": "渺远晨星",
     "effect.exquisito.fuchsia_goo": "品红粘质",
     "effect.exquisito.fuchsia_goo.description": "该状态通过近战攻击在生物间传播，以降低移动速度为代价减免宿主所受伤害，当其持续时间结束时宿主将被垂直弹出",
+    "effect.exquisito.morgoth": "暗夜慌踪",
     "effect.exquisito.resonance": "共鸣",
     "effect.exquisito.resonance.description": "当效果持有者对生物造成伤害时，同其调换位置",
     "effect.exquisito.space_diving": "深空俯潜",
@@ -16,16 +22,31 @@
 
     "item.exquisito.chorus_ice_cream": "紫颂冰淇淋",
     "item.exquisito.chorus_cake": "紫颂蛋糕",
+    "item.exquisito.chorus_cake_slice": "紫颂蛋糕切片",
     "item.exquisito.chorus_milkshake": "紫颂奶昔",
     "item.exquisito.chorus_cookie": "紫颂曲奇",
 
+    "item.exquisito.ether_bulb_ice_cream": "以太球果冰淇淋",
+    "item.exquisito.ether_bulb_cake": "以太球果蛋糕",
+    "item.exquisito.ether_bulb_cake_slice": "以太球果蛋糕切片",
+    "item.exquisito.ether_bulb_parfait": "以太球果芭菲",
+    "item.exquisito.ether_bulb_cookie": "以太球果曲奇",
+
     "item.exquisito.jelly_ring_ice_cream": "甜胶环冰淇淋",
     "item.exquisito.jelly_ring_cake": "甜胶环蛋糕",
+    "item.exquisito.jelly_ring_cake_slice": "甜胶环蛋糕切片",
     "item.exquisito.jelly_ring_milkshake": "甜胶环奶昔",
     "item.exquisito.jelly_ring_cookie": "甜胶环曲奇",
 
+    "item.exquisito.nightshade_berry_ice_cream": "夜影浆果冰淇淋",
+    "item.exquisito.nightshade_berry_cake": "夜影浆果蛋糕",
+    "item.exquisito.nightshade_berry_cake_slice": "夜影浆果蛋糕切片",
+    "item.exquisito.nightshade_berry_parfait": "夜影浆果芭菲",
+    "item.exquisito.nightshade_berry_cookie": "夜影浆果曲奇",
+
     "item.exquisito.zure_berry_ice_cream": "天蓝莓冰淇淋",
     "item.exquisito.zure_berry_cake": "天蓝莓蛋糕",
+    "item.exquisito.zure_berry_cake_slice": "天蓝莓蛋糕切片",
     "item.exquisito.zure_berry_milkshake": "天蓝莓奶昔",
     "item.exquisito.zure_berry_cookie": "天蓝莓曲奇",
 

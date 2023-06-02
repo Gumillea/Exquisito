@@ -1,0 +1,36 @@
+{
+  "type": "farmersdelight:cutting",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:nightshade_berries"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_nightshade_berry_flavor"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:nightshade_berry_cake"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "exquisito:nightshade_berry_cake_slice",
+      "count": 7
+    }
+  ]
+}

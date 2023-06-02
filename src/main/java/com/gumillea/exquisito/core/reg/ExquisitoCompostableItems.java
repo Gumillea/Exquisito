@@ -10,11 +10,14 @@ public class ExquisitoCompostableItems {
         //Cakes
         DataUtil.registerCompostable(ExquisitoItems.CHORUS_CAKE.get(), 1.00F);
         DataUtil.registerCompostable(ExquisitoItems.JELLY_RING_CAKE.get(), 1.00F);
+        DataUtil.registerCompostable(ExquisitoItems.NIGHTSHADE_BERRY_CAKE.get(), 1.00F);
         DataUtil.registerCompostable(ExquisitoItems.ZURE_BERRY_CAKE.get(), 1.00F);
 
         //Cookies
         DataUtil.registerCompostable(ExquisitoItems.CHORUS_COOKIE.get(), 0.85F);
+        DataUtil.registerCompostable(ExquisitoItems.ETHER_BULB_COOKIE.get(), 0.85F);
         DataUtil.registerCompostable(ExquisitoItems.JELLY_RING_COOKIE.get(), 0.85F);
+        DataUtil.registerCompostable(ExquisitoItems.NIGHTSHADE_BERRY_COOKIE.get(), 0.85F);
         DataUtil.registerCompostable(ExquisitoItems.ZURE_BERRY_COOKIE.get(), 0.85F);
 
         //Others

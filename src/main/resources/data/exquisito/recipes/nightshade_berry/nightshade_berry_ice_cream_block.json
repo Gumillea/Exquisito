@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:nightshade_berries"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_nightshade_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:nightshade_berry_ice_cream"
+    },
+    "B": {
+      "item": "minecraft:snow_block"
+    }
+  },
+  "result": {
+    "item": "exquisito:nightshade_berry_ice_cream_block",
+    "count": 8
+  }
+}

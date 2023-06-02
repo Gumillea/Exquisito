@@ -17,7 +17,10 @@ public class ExquisitoItemTagsProvider extends ItemTagsProvider {
         this.tag(NeapolitanItemTags.ICE_CREAM).add(
                ExquisitoItems.CHORUS_ICE_CREAM.get(),
                ExquisitoItems.JELLY_RING_ICE_CREAM.get(),
-               ExquisitoItems.ZURE_BERRY_ICE_CREAM.get()
+               ExquisitoItems.ETHER_BULB_ICE_CREAM.get(),
+               ExquisitoItems.ZURE_BERRY_ICE_CREAM.get(),
+               ExquisitoItems.NIGHTSHADE_BERRY_ICE_CREAM.get(),
+               ExquisitoItems.ETHER_BULB_ICE_CREAM.get()
         );
     }
 }
