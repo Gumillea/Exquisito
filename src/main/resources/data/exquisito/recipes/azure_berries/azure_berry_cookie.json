@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:azure_berries"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_zure_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "item": "enlightened_end:azure_berries"
+    }
+  ],
+  "result": {
+    "item": "exquisito:zure_berry_cookie",
+    "count": 8
+  }
+}

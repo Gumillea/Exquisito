@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:ether_bulbs"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_ether_bulb_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    " AB",
+    " BA",
+    "C  "
+  ],
+  "key": {
+    "A": {
+      "item": "byg:ether_bulbs"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "exquisito:ether_lollipop"
+  }
+}

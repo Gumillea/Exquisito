@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "enlightened_end:cooked_ringling"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "neapolitan:chocolate_bar"
+    },
+    {
+      "item": "enlightened_end:cooked_ringling"
+    }
+  ],
+  "result": {
+    "item": "exquisito:chocolate_ringling"
+  }
+}

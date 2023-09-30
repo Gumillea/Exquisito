@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:nightshade_berries"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_nightshade_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "item": "byg:nightshade_berries"
+    }
+  ],
+  "result": {
+    "item": "exquisito:nightshade_berry_cookie",
+    "count": 8
+  }
+}

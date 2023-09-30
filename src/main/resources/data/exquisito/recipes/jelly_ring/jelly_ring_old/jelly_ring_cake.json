@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:jelly_ring_item"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_jelly_ring_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "ADA",
+    "BEB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:milk"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:wheat"
+    },
+    "D": {
+      "item": "enlightened_end:jelly_ring_item"
+    },
+    "E": {
+      "tag": "forge:eggs"
+    }
+  },
+  "result": {
+    "item": "exquisito:jelly_ring_cake",
+    "count": 1
+  }
+}

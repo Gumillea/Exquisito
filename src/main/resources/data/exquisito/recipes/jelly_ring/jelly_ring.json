@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:squished_bouncer"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_jelly_ring_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+    "A": {
+      "item": "enlightened_end:ennegel_glob"
+    },
+    "B": {
+      "item": "enlightened_end:squished_bouncer"
+    },
+    "C": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "item": "exquisito:jelly_ring",
+    "count": 8
+  }
+}

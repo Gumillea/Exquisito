@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cutting",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_chorus_flavor"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:chorus_cake"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  },
+  "result": [
+    {
+      "item": "exquisito:chorus_cake_slice",
+      "count": 7
+    }
+  ]
+}

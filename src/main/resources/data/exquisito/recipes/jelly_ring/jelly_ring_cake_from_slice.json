@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:squished_bouncer"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_jelly_ring_flavor"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    },
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    },
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    },
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    },
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    },
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    },
+    {
+      "item": "exquisito:jelly_ring_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "exquisito:jelly_ring_cake"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "byg"
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:warzipan"
+    },
+    {
+      "item": "minecraft:yellow_dye"
+    }
+  ],
+  "result": {
+    "item": "exquisito:nightshade_berry_warzipan",
+    "count": 2
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "exquisito:item/enlightened/enlightened_battenberg_cake_0"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:ether_bulbs"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_ether_bulb_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "item": "byg:ether_bulbs"
+    }
+  ],
+  "result": {
+    "item": "exquisito:ether_bulb_cookie",
+    "count": 8
+  }
+}

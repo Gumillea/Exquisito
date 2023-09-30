@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_chorus_flavor"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "tag": "forge:grain"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "exquisito:chorus_khanom_chan",
+    "count": 2
+  }
+}

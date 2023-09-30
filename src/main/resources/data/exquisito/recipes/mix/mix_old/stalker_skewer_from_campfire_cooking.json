@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:zure_berry"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_zure_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredient": {
+    "item": "exquisito:raw_stalker_skewer"
+  },
+  "result": "exquisito:stalker_skewer",
+  "experience": 0.35,
+  "cookingtime": 600
+}

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:ether_bulbs"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_ether_bulb_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "BAB",
+    "CDC",
+    " E "
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:ether_bulb_ice_cream"
+    },
+    "B": {
+      "item": "byg:ether_bulbs"
+    },
+    "C": {
+      "tag": "forge:milk"
+    },
+    "D": {
+      "item": "neapolitan:vanilla_pudding"
+    },
+    "E": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "exquisito:ether_bulb_parfait"
+  }
+}

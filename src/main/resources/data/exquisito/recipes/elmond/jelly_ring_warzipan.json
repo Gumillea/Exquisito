@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    },
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:mod_loaded",
+        "modid": "enlightened_end"
+      }
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:warzipan"
+    },
+    {
+      "item": "minecraft:magenta_dye"
+    }
+  ],
+  "result": {
+    "item": "exquisito:jelly_ring_warzipan",
+    "count": 2
+  }
+}

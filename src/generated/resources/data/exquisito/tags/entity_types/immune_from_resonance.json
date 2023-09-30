@@ -1,0 +1,18 @@
+{
+  "values": [
+    "minecraft:bat",
+    "minecraft:enderman",
+    "minecraft:ghast",
+    "minecraft:phantom",
+    "minecraft:shulker",
+    {
+      "id": "enlightened_end:stalker",
+      "required": false
+    },
+    {
+      "id": "enlightened_end:squelcher",
+      "required": false
+    },
+    "#forge:bosses"
+  ]
+}

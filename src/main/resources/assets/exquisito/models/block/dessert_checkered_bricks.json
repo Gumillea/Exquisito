@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "exquisito:block/dessert_checkered_bricks"
+  }
+}

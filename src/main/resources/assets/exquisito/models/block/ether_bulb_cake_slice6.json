@@ -1,0 +1,10 @@
+{
+  "parent": "block/cake_slice6",
+  "textures": {
+    "particle": "exquisito:block/ether_bulb_cake_side",
+    "bottom": "exquisito:block/ether_bulb_cake_bottom",
+    "top": "exquisito:block/ether_bulb_cake_top",
+    "side": "exquisito:block/ether_bulb_cake_side",
+    "inside": "exquisito:block/ether_bulb_cake_inner"
+  }
+}

@@ -1,0 +1,40 @@
+
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+[[mods]]
+modId="exquisito"
+version="1.2.1"
+displayName="Exquisito"
+logoFile="icon.png"
+authors="Gumillea"
+description='''
+An addon mod for Neapolitan, designed to enhance diet diversity and mod compatibility by adding new foods with unique effects from the End.
+'''
+[[dependencies.exquisito]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exquisito]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exquisito]]
+    modId="blueprint"
+    mandatory=true
+    versionRange="[6.1.0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.exquisito]]
+    modId="neapolitan"
+    mandatory=true
+    versionRange="[4.0.0,)"
+    ordering="AFTER"
+    side="BOTH"

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "exquisito:item/ether_bulb_parfait_1"
+  }
+}

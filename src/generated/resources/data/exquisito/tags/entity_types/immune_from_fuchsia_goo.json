@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:ghast",
+    "minecraft:phantom",
+    "minecraft:shulker",
+    "minecraft:warden",
+    {
+      "id": "enlightened_end:ringling",
+      "required": false
+    },
+    "#forge:bosses"
+  ]
+}

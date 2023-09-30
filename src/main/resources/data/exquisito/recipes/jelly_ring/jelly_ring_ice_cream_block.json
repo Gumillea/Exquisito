@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:squished_bouncer"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_jelly_ring_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:snow_block"
+    },
+    "B": {
+      "item": "exquisito:jelly_ring_ice_cream"
+    }
+  },
+  "result": {
+    "item": "exquisito:jelly_ring_ice_cream_block",
+    "count": 8
+  }
+}

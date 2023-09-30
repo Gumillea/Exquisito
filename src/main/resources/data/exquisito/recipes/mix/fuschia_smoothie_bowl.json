@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:squished_bouncer"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_jelly_ring_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "enlightened_end:squished_bouncer"
+    },
+    {
+      "item": "enlightened_end:ennegel_fern"
+    },
+    {
+      "item": "exquisito:jelly_ring"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "exquisito:fuschia_smoothie_bowl"
+  }
+}

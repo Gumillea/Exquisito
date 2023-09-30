@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "exquisito:item/ether_bulb_parfait_1",
+      "predicate": {
+        "minecraft:damage": 0.33
+      }
+    },
+    {
+      "model": "exquisito:item/ether_bulb_parfait_2",
+      "predicate": {
+        "minecraft:damage": 0.66
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "exquisito:item/ether_bulb_parfait_0"
+  }
+}

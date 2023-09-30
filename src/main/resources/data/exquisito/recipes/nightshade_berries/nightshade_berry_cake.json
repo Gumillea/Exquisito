@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "byg:nightshade_berries"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_nightshade_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "ADA",
+    "BEB",
+    "CDC"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:milk"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:wheat"
+    },
+    "D": {
+      "item": "byg:nightshade_berries"
+    },
+    "E": {
+      "tag": "forge:eggs"
+    }
+  },
+  "result": {
+    "item": "exquisito:nightshade_berry_cake"
+  }
+}
