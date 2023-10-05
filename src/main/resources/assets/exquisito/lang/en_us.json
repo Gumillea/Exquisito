@@ -26,6 +26,7 @@
     "effect.exquisito.morgoth": "Morgoth",
     "effect.exquisito.morgoth.description": "When a weapon is held in the user's main hand and the surrounding environment's light level is below 7, causing a ranged magic attack.",
     "effect.exquisito.modulation": "Modulation",
+    "effect.exquisito.modulation.description": "Transform into another corresponding functional effect when the user performs certain behaviours.",
     "effect.exquisito.resonance": "Resonance",
     "effect.exquisito.resonance.description": "The user will swaps positions with the attack target.",
     "effect.exquisito.space_diving": "Space Diving",

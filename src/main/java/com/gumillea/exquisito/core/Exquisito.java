@@ -1,5 +1,6 @@
 package com.gumillea.exquisito.core;
 
+import com.gumillea.exquisito.core.data.modifiers.ExquisitoLootModifierProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoBlockTagsProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoEntityTypeTagsProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoItemTagsProvider;
@@ -59,5 +60,6 @@ public class Exquisito
         generator.addProvider(includeServer, blockTagsProvider);
         generator.addProvider(includeServer, new ExquisitoItemTagsProvider(generator, blockTagsProvider, existingFileHelper));
         generator.addProvider(includeServer, new ExquisitoEntityTypeTagsProvider(generator, existingFileHelper));
+        generator.addProvider(includeServer, new ExquisitoLootModifierProvider(generator));
     }
 }

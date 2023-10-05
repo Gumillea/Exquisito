@@ -1,6 +1,9 @@
 package com.gumillea.exquisito.core.reg;
 
+import com.gumillea.exquisito.common.block.AttachedOverworldElmondCropBlock;
 import com.gumillea.exquisito.common.block.ExquisitoCakeBlock;
+import com.gumillea.exquisito.common.block.OverworldElmondCropBlock;
+import com.gumillea.exquisito.common.block.OverworldElmondFruitBlock;
 import com.gumillea.exquisito.core.Exquisito;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.teamabnormals.blueprint.core.util.registry.BlockSubRegistryHelper;
@@ -28,13 +31,16 @@ public class ExquisitoBlocks {
 
     //Elmond Flavor
     public static final RegistryObject<Block> ELMOND_BLOCK = HELPER.createBlock("elmond_block", () -> new Block(Properties.ELMOND_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-
     public static final RegistryObject<Block> WARZIPAN_BLOCK = HELPER.createBlock("warzipan_block", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> WARZIPAN_BRICKS = HELPER.createBlock("warzipan_bricks", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> WARZIPAN_BRICK_SLAB = HELPER.createBlock("warzipan_brick_slab", () -> new SlabBlock(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICKS = HELPER.createBlock("dessert_checkered_bricks", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICK_SLAB = HELPER.createBlock("dessert_checkered_brick_slab", () -> new SlabBlock(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> BATTENLIGHT = HELPER.createBlock("battenlight", () -> new Block(Properties.BATTENLIGHT), (CreativeModeTab.TAB_DECORATIONS));
+
+    public static final RegistryObject<Block> OVERWORLD_ELMOND_CROP = HELPER.createBlockNoItem("overworld_elmond_crop", () -> new OverworldElmondCropBlock(Properties.OVERWORLD_ELMOND_CROP));
+    public static final RegistryObject<Block> ATTACHED_OVERWORLD_ELMOND_CROP = HELPER.createBlockNoItem("attached_overworld_elmond_crop", () -> new AttachedOverworldElmondCropBlock(Properties.OVERWORLD_ELMOND_CROP));
+    public static final RegistryObject<Block> OVERWORLD_ELMOND_FRUIT = HELPER.createBlockNoItem("overworld_elmond_fruit", () -> new OverworldElmondFruitBlock(Properties.OVERWORLD_ELMOND_FRUIT));
 
     // Jelly Ring Flavor
     public static final RegistryObject<Block> JELLY_RING_ICE_CREAM_BLOCK = HELPER.createBlock("jelly_ring_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
@@ -65,6 +71,8 @@ public class ExquisitoBlocks {
         public static final BlockBehaviour.Properties ELMOND_BLOCK = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(0.5F, 2.0F).sound(SoundType.MUD);
         public static final BlockBehaviour.Properties WARZIPAN_BLOCK = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(1.0F, 4.0F).sound(SoundType.STONE);
         public static final BlockBehaviour.Properties BATTENLIGHT = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(0.5F).sound(SoundType.STONE).lightLevel(value -> 15);
+        public static final BlockBehaviour.Properties OVERWORLD_ELMOND_CROP = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).instabreak().noCollission().sound(SoundType.GRASS);
+        public static final BlockBehaviour.Properties OVERWORLD_ELMOND_FRUIT = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.SNOW).instabreak().noCollission().sound(SoundType.MUD).lightLevel(value -> 8);
     }
 }
 

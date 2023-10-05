@@ -26,6 +26,7 @@
     "effect.exquisito.morgoth": "暗夜慌踪",
     "effect.exquisito.morgoth.description": "当效果持有者主手持有近战武器且周边光照等级低于7时，对范围内生物造成群体魔法伤害",
     "effect.exquisito.modulation": "调谐",
+    "effect.exquisito.modulation.description": "当效果持有者进行某些行为时转化为对应的功能性效果",
     "effect.exquisito.resonance": "共鸣",
     "effect.exquisito.resonance.description": "当效果持有者对生物造成伤害时，同其调换位置",
     "effect.exquisito.space_diving": "深空俯潜",
