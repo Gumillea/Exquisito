@@ -1,16 +1,12 @@
 package com.gumillea.exquisito.core.reg;
 
-import com.gumillea.exquisito.common.block.AttachedOverworldElmondCropBlock;
-import com.gumillea.exquisito.common.block.ExquisitoCakeBlock;
-import com.gumillea.exquisito.common.block.OverworldElmondCropBlock;
-import com.gumillea.exquisito.common.block.OverworldElmondFruitBlock;
+import com.gumillea.exquisito.common.block.*;
 import com.gumillea.exquisito.core.Exquisito;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.teamabnormals.blueprint.core.util.registry.BlockSubRegistryHelper;
+import com.teamabnormals.neapolitan.common.block.MilkshakeCauldronBlock;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
@@ -20,6 +16,11 @@ import net.minecraftforge.registries.RegistryObject;
 @Mod.EventBusSubscriber(modid = Exquisito.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ExquisitoBlocks {
     public static final BlockSubRegistryHelper HELPER = Exquisito.REGISTRY_HELPER.getBlockSubHelper();
+
+    //Milkshake
+    public static final RegistryObject<Block> CHORUS_MILKSHAKE_CAULDRON = HELPER.createBlockNoItem("chorus_milkshake_cauldron", () -> new MilkshakeCauldronBlock(ExquisitoCauldronInteractions.CHORUS_MILKSHAKE.map()));
+    public static final RegistryObject<Block> JELLY_RING_MILKSHAKE_CAULDRON = HELPER.createBlockNoItem("jelly_ring_milkshake_cauldron", () -> new MilkshakeCauldronBlock(ExquisitoCauldronInteractions.JELLY_RING_MILKSHAKE.map()));
+    public static final RegistryObject<Block> ZURE_BERRY_MILKSHAKE_CAULDRON = HELPER.createBlockNoItem("zure_berry_milkshake_cauldron", () -> new MilkshakeCauldronBlock(ExquisitoCauldronInteractions.ZURE_BERRY_MILKSHAKE.map()));
 
     //Chorus Fruit Flavor
     public static final RegistryObject<Block> CHORUS_ICE_CREAM_BLOCK = HELPER.createBlock("chorus_ice_cream_block", () -> new Block(Properties.CHORUS_ICE_CREAM_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
@@ -41,6 +42,8 @@ public class ExquisitoBlocks {
     public static final RegistryObject<Block> OVERWORLD_ELMOND_CROP = HELPER.createBlockNoItem("overworld_elmond_crop", () -> new OverworldElmondCropBlock(Properties.OVERWORLD_ELMOND_CROP));
     public static final RegistryObject<Block> ATTACHED_OVERWORLD_ELMOND_CROP = HELPER.createBlockNoItem("attached_overworld_elmond_crop", () -> new AttachedOverworldElmondCropBlock(Properties.OVERWORLD_ELMOND_CROP));
     public static final RegistryObject<Block> OVERWORLD_ELMOND_FRUIT = HELPER.createBlockNoItem("overworld_elmond_fruit", () -> new OverworldElmondFruitBlock(Properties.OVERWORLD_ELMOND_FRUIT));
+    public static final RegistryObject<Block> END_ELMOND_PLANT = HELPER.createBlockNoItem("end_elmond_plant", () -> new EndElmondPlantBlock(Properties.END_ELMOND));
+    public static final RegistryObject<Block> END_ELMOND_FLOWER = HELPER.createBlockNoItem("end_elmond_flower", () -> new EndElmondFlowerBlock((EndElmondPlantBlock) ExquisitoBlocks.END_ELMOND_PLANT.get(), Properties.END_ELMOND));
 
     // Jelly Ring Flavor
     public static final RegistryObject<Block> JELLY_RING_ICE_CREAM_BLOCK = HELPER.createBlock("jelly_ring_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
@@ -72,7 +75,8 @@ public class ExquisitoBlocks {
         public static final BlockBehaviour.Properties WARZIPAN_BLOCK = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(1.0F, 4.0F).sound(SoundType.STONE);
         public static final BlockBehaviour.Properties BATTENLIGHT = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(0.5F).sound(SoundType.STONE).lightLevel(value -> 15);
         public static final BlockBehaviour.Properties OVERWORLD_ELMOND_CROP = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).instabreak().noCollission().sound(SoundType.GRASS);
-        public static final BlockBehaviour.Properties OVERWORLD_ELMOND_FRUIT = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.SNOW).instabreak().noCollission().sound(SoundType.MUD).lightLevel(value -> 8);
+        public static final BlockBehaviour.Properties OVERWORLD_ELMOND_FRUIT = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.SNOW).instabreak().noCollission().sound(SoundType.MUD).lightLevel(value -> 10);
+        public static final BlockBehaviour.Properties END_ELMOND = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).strength(0.5F, 2.0F).noOcclusion().sound(SoundType.MUD);
     }
 }
 

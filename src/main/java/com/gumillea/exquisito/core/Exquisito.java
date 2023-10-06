@@ -4,6 +4,7 @@ import com.gumillea.exquisito.core.data.modifiers.ExquisitoLootModifierProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoBlockTagsProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoEntityTypeTagsProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoItemTagsProvider;
+import com.gumillea.exquisito.core.reg.ExquisitoCauldronInteractions;
 import com.gumillea.exquisito.core.reg.ExquisitoCompostableItems;
 import com.gumillea.exquisito.core.reg.ExquisitoEffects;
 import com.gumillea.exquisito.core.reg.ExquisitoLootConditions;
@@ -46,6 +47,7 @@ public class Exquisito
 
     private void commonSetup(FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            ExquisitoCauldronInteractions.registerCauldronInteractions();
             ExquisitoCompostableItems.registerCompostableItems();
             FoodsCompat.modifyFoods();
         });

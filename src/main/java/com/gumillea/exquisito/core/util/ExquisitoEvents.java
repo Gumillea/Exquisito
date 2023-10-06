@@ -187,7 +187,7 @@ public class ExquisitoEvents {
             double z = entity.getZ() + (entity.getRandom().nextDouble() - 0.5D) * 8.0D;
             for (int i2 = 0; i2 < 8; ++i2) {
                 BlockPos pos = new BlockPos(x, y, z);
-                BlockPos pos2 = new BlockPos(x, y + 1, z);
+                BlockPos pos2 = new BlockPos(pos.above(1));
                 BlockState blockstate = world.getBlockState(pos);
                 BlockState blockstate2 = world.getBlockState(pos2);
                 if (blockstate.is(ExquisitoBlockTags.ENNEGEL_REPLACEABLE)) {

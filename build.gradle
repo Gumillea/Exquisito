@@ -102,8 +102,8 @@ dependencies {
     runtimeOnly fg.deobf("mezz.jei:jei-1.19.2-forge:11.6.0.1015")
     runtimeOnly fg.deobf("curse.maven:appleskin-248787:3927567")
 
-    implementation fg.deobf("curse.maven:neapolitan-382016:4023083")
-    implementation fg.deobf("curse.maven:blueprint-382216:4442628")
+    implementation fg.deobf("curse.maven:neapolitan-382016:4783978")
+    implementation fg.deobf("curse.maven:blueprint-382216:4749000")
 
     implementation fg.deobf("curse.maven:enlightend-502786:4731540")
     implementation fg.deobf("curse.maven:farmers-delight-398521:4679318")
