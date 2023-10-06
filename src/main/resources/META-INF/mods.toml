@@ -28,13 +28,13 @@ An addon mod for Neapolitan, designed to enhance diet diversity and mod compatib
 [[dependencies.exquisito]]
     modId="blueprint"
     mandatory=true
-    versionRange="[6.1.0,)"
+    versionRange="[6.2.0,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies.exquisito]]
     modId="neapolitan"
     mandatory=true
-    versionRange="[4.0.0,)"
+    versionRange="[4.1.0,)"
     ordering="AFTER"
     side="BOTH"
