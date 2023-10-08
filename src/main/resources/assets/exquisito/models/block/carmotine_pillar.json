@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "exquisito:block/carmotine_pillar_top",
+    "side": "exquisito:block/carmotine_pillar"
+  }
+}
+

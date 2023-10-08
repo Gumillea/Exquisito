@@ -1,6 +1,11 @@
 {
   "values": [
+    "exquisito:carmotine_block",
+    "exquisito:carmotine_block",
+    "exquisito:carmotine_pillar",
     "exquisito:warzipan_block",
-    "exquisito:warzipan_bricks"
+    "exquisito:warzipan_bricks",
+    "exquisito:weathered_carmotine_mural",
+    "exquisito:ruined_carmotine_mural"
   ]
 }
