@@ -61,11 +61,14 @@ public class ExquisitoItems {
     //Elmond Flavor
     public static final RegistryObject<Item> ELMOND = HELPER.createItem("elmond", () -> new ElmondItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> WARZIPAN = HELPER.createItem("warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.WARZIPAN).tab(CreativeModeTab.TAB_FOOD)));
+
     public static final RegistryObject<Item> JELLY_RING_WARZIPAN = HELPER.createItem("jelly_ring_warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.JELLY_RING_WARZIPAN).tab(ModCompat.ENLIGHTEND_ITEM_ALTERNATE)));
     public static final RegistryObject<Item> ZURE_BERRY_WARZIPAN = HELPER.createItem("zure_berry_warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.ZURE_BERRY_WARZIPAN).tab(ModCompat.ENLIGHTEND_ITEM_ALTERNATE)));
     public static final RegistryObject<Item> ETHER_BULB_WARZIPAN = HELPER.createItem("ether_bulb_warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.ETHER_BULB_WARZIPAN).tab(ModCompat.BYG_ITEM_ALTERNATE)));
     public static final RegistryObject<Item> NIGHTSHADE_BERRY_WARZIPAN = HELPER.createItem("nightshade_berry_warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.NIGHTSHADE_BERRY_WARZIPAN).tab(ModCompat.BYG_ITEM_ALTERNATE)));
-    public static final RegistryObject<Item> ENLIGHTENED_BATTENBERG_CAKE = HELPER.createItem("enlightened_battenberg_cake", () -> new Item(new Item.Properties().food(ExquisitoFoods.ENLIGHTENED_BATTENBERG_CAKE)));
+
+    public static final RegistryObject<Item> BELOVED_BATTENBERG_CAKE = HELPER.createItem("beloved_battenberg_cake", () -> new Item(new Item.Properties().food(ExquisitoFoods.BELOVED_BATTENBERG_CAKE).tab(CreativeModeTab.TAB_FOOD)));
+    public static final RegistryObject<Item> ENLIGHTENED_BATTENBERG_CAKE = HELPER.createItem("enlightened_battenberg_cake", () -> new Item(new Item.Properties().food(ExquisitoFoods.ENLIGHTENED_BATTENBERG_CAKE).tab(ModCompat.ENLIGHTEND_ITEM)));
 
     //Mix
     public static final RegistryObject<Item> JELLY_FILLED_CHOCOLATE = HELPER.createItem("jelly_filled_chocolate", () -> new Item(new Item.Properties().food(ExquisitoFoods.JELLY_FILLED_CHOCOLATE).tab(ModCompat.ENLIGHTEND_ITEM)));
@@ -101,14 +104,17 @@ public class ExquisitoItems {
 
         //Warzipan
         public static final FoodProperties WARZIPAN = (new FoodProperties.Builder()).nutrition(4).saturationMod(0.5F).effect(() -> new MobEffectInstance(ExquisitoEffects.MODULATION.get(), 400), 1.0F).build();
+
         public static final FoodProperties ZURE_BERRY_WARZIPAN = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).effect(() -> new MobEffectInstance(ExquisitoEffects.MODULATION.get(), 200), 1.0F).effect(() -> new MobEffectInstance(ExquisitoEffects.SPACE_DIVING.get(), 600), 1.0F).build();
         public static final FoodProperties JELLY_RING_WARZIPAN = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).effect(() -> new MobEffectInstance(ExquisitoEffects.MODULATION.get(), 200), 1.0F).effect(() -> new MobEffectInstance(ExquisitoEffects.FUCHSIA_GOO.get(), 200), 1.0F).build();
         public static final FoodProperties ETHER_BULB_WARZIPAN = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).effect(() -> new MobEffectInstance(ExquisitoEffects.MODULATION.get(), 200), 1.0F).effect(() -> new MobEffectInstance(ExquisitoEffects.EARENDEL.get(), 400), 1.0F).build();
         public static final FoodProperties NIGHTSHADE_BERRY_WARZIPAN = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.3F).effect(() -> new MobEffectInstance(ExquisitoEffects.MODULATION.get(), 200), 1.0F).effect(() -> new MobEffectInstance(ExquisitoEffects.MORGOTH.get(), 400), 1.0F).build();
 
+        public static final FoodProperties ENLIGHTENED_BATTENBERG_CAKE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.4F).effect(() -> new MobEffectInstance(ExquisitoEffects.DIVER_DOWN.get(), 600), 1.0F).build();
+        public static final FoodProperties BELOVED_BATTENBERG_CAKE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.4F).effect(() -> new MobEffectInstance(ExquisitoEffects.LOVE_DELUXE.get(), 600), 1.0F).build();
+
         //Others
         public static final FoodProperties MILKSHAKE = (new FoodProperties.Builder()).nutrition(3).saturationMod(0.6F).build();
-        public static final FoodProperties ENLIGHTENED_BATTENBERG_CAKE = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.4F).effect(() -> new MobEffectInstance(ExquisitoEffects.FUCHSIA_GOO.get(), 400), 1.0F).effect(() -> new MobEffectInstance(ExquisitoEffects.SPACE_DIVING.get(), 600), 1.0F).build();
         public static final FoodProperties CHOCOLATE_RINGLING = (new FoodProperties.Builder()).nutrition(10).saturationMod(1.0F).effect(() -> new MobEffectInstance(MobEffects.UNLUCK, 1200), 1.0F).effect(() -> new MobEffectInstance(NeapolitanMobEffects.SUGAR_RUSH.get(), 600,2), 1.0F).build();
         public static final FoodProperties HALO_HALO = (new FoodProperties.Builder()).nutrition(6).saturationMod(1.0F).effect(() -> new MobEffectInstance(ExquisitoEffects.RESONANCE.get(), 600), 1.0F).effect(() -> new MobEffectInstance(NeapolitanMobEffects.HARMONY.get(), 600), 1.0F).build();
         public static final FoodProperties CHORUS_KHANOM_CHAN = (new FoodProperties.Builder()).nutrition(5).saturationMod(0.5F).effect(() -> new MobEffectInstance(ExquisitoEffects.RESONANCE.get(), 900), 1.0F).build();

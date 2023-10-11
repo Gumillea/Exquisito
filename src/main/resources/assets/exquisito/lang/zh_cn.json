@@ -22,7 +22,11 @@
     "block.exquisito.dessert_checkered_bricks": "甜点格纹砖",
     "block.exquisito.dessert_checkered_brick_slab": "甜点格纹砖台阶",
     "block.exquisito.carmotine_block": "赭玉块",
+    "block.exquisito.carmotine_slab": "赭玉台阶",
+    "block.exquisito.carmotine_stairs": "赭玉楼梯",
     "block.exquisito.carmotine_bricks": "赭玉砖",
+    "block.exquisito.carmotine_brick_slab": "赭玉砖台阶",
+    "block.exquisito.carmotine_brick_stairs": "赭玉砖楼梯",
     "block.exquisito.carmotine_ladder": "赭玉梯",
     "block.exquisito.carmotine_pillar": "赭玉柱",
     "block.exquisito.weathered_carmotine_mural": "受蚀的赭玉壁画",
@@ -42,6 +46,11 @@
     "effect.exquisito.space_diving": "深空俯潜",
     "effect.exquisito.space_diving.description": "当效果持有者受到摔落伤害时，令其免于因此次伤害而死并轰飞着陆点周边生物",
 
+    "effect.exquisito.diver_down": "怒海潜将",
+    "effect.exquisito.love_deluxe": "华丽挚爱",
+    "effect.exquisito.monkey_majik": "猴子把戏",
+    "effect.exquisito.oblivion": "梦寂",
+
     "item.exquisito.chorus_ice_cream": "紫颂冰淇淋",
     "item.exquisito.chorus_cake": "紫颂蛋糕",
     "item.exquisito.chorus_khanom_chan": "紫颂千层糕",
@@ -55,6 +64,9 @@
     "item.exquisito.ether_bulb_warzipan": "以太球果形楄兆膏",
     "item.exquisito.jelly_ring_warzipan": "甜胶环形楄兆膏",
     "item.exquisito.nightshade_berry_warzipan": "夜影浆果形楄兆膏",
+
+    "item.exquisito.beloved_battenberg_cake": "挚恋巴滕伯格蛋糕",
+    "item.exquisito.enlightened_battenberg_cake": "启迪巴滕伯格蛋糕",
 
     "item.exquisito.ether_bulb_ice_cream": "以太球果冰淇淋",
     "item.exquisito.ether_bulb_cake": "以太球果蛋糕",
@@ -83,7 +95,6 @@
     "item.exquisito.zure_berry_milkshake": "天蓝莓奶昔",
     "item.exquisito.zure_berry_cookie": "天蓝莓曲奇",
 
-    "item.exquisito.enlightened_battenberg_cake": "启蒙巴滕伯格蛋糕",
     "item.exquisito.chocolate_ringling": "巧克力环灵",
     "item.exquisito.enderneath_salad": "末隐沙拉",
     "item.exquisito.fuschia_smoothie_bowl": "品红思慕雪碗",

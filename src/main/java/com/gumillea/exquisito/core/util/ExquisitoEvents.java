@@ -7,6 +7,9 @@ import com.gumillea.exquisito.core.reg.ExquisitoItems;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.gumillea.exquisito.core.util.tags.ExquisitoBlockTags;
 import com.gumillea.exquisito.core.util.tags.ExquisitoEntityTypeTags;
+import com.teamabnormals.neapolitan.core.Neapolitan;
+import com.teamabnormals.neapolitan.core.other.tags.NeapolitanMobEffectTags;
+import com.teamabnormals.neapolitan.core.registry.NeapolitanMobEffects;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
@@ -18,6 +21,10 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -26,20 +33,20 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
-import net.minecraftforge.event.entity.living.LivingDamageEvent;
-import net.minecraftforge.event.entity.living.LivingDeathEvent;
-import net.minecraftforge.event.entity.living.LivingHealEvent;
-import net.minecraftforge.event.entity.living.MobEffectEvent;
+import net.minecraftforge.event.entity.living.*;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.tags.ITagManager;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
+import java.util.UUID;
 
 @Mod.EventBusSubscriber(modid = Exquisito.MODID)
 public class ExquisitoEvents {
@@ -233,6 +240,16 @@ public class ExquisitoEvents {
                 event.setResult(Event.Result.DENY);
             }
         }
+
+        if (entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()) != null) {
+            ITagManager<MobEffect> mobEffectTags = ForgeRegistries.MOB_EFFECTS.tags();
+            if (mobEffectTags != null && !mobEffectTags.getTag(NeapolitanMobEffectTags.UNAFFECTED_BY_VANILLA_SCENT).contains(effect)) {
+                float amplifier = entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()).getAmplifier();
+                entity.heal(amplifier + 1.0F);
+                event.setResult(Event.Result.DENY);
+            }
+        }
+
     }
 
     @SubscribeEvent
@@ -240,12 +257,24 @@ public class ExquisitoEvents {
         LivingEntity entity = event.getEntity();
         float amount = event.getAmount();
 
-        if (entity.getEffect(ExquisitoEffects.MODULATION.get()) != null && amount + entity.getHealth() > entity.getMaxHealth()){
+        if (entity.getEffect(ExquisitoEffects.MODULATION.get()) != null
+                && entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()) == null
+                && entity.getEffect(NeapolitanMobEffects.VANILLA_SCENT.get()) == null
+                && amount + entity.getHealth() > entity.getMaxHealth()){
             int m_d = entity.getEffect(ExquisitoEffects.MODULATION.get()).getDuration();
             int m_a = entity.getEffect(ExquisitoEffects.MODULATION.get()).getAmplifier();
             entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, m_d, m_a));
             entity.getCommandSenderWorld().playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.MUD_BREAK, SoundSource.PLAYERS, 1.0F, 1.5F);
             entity.removeEffect(ExquisitoEffects.MODULATION.get());
+        }
+    }
+
+    @SubscribeEvent
+    public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+        LivingEntity entity = event.getEntity();
+
+        if (entity instanceof Player player && player.getEffect(ExquisitoEffects.DIVER_DOWN.get()) != null && player.isFallFlying()) {
+            player.noPhysics = true;
         }
     }
 

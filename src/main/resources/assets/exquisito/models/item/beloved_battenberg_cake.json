@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "exquisito:item/enlightened_battenberg_cake"
+    "layer0": "exquisito:item/beloved_battenberg_cake"
   }
 }

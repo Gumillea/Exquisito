@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    },
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:azure_berries"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:squished_bouncer"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:warzipan"
+    },
+    {
+      "item": "exquisito:warzipan"
+    },
+    {
+      "item": "enlightened_end:azure_berries"
+    },
+    {
+      "item": "exquisito:jelly_ring"
+    }
+  ],
+  "result": {
+    "item": "exquisito:enlightened_battenberg_cake"
+  }
+}

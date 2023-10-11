@@ -1,19 +1,5 @@
 {
   "variants": {
-    "facing=east": {
-      "model": "exquisito:block/carmotine_ladder",
-      "y": 90
-    },
-    "facing=north": {
-      "model": "exquisito:block/carmotine_ladder"
-    },
-    "facing=south": {
-      "model": "exquisito:block/carmotine_ladder",
-      "y": 180
-    },
-    "facing=west": {
-      "model": "exquisito:block/carmotine_ladder",
-      "y": 270
-    }
+    "": { "model": "exquisito:block/battenlight" }
   }
 }

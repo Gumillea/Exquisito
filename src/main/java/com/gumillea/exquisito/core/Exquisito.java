@@ -4,6 +4,7 @@ import com.gumillea.exquisito.core.data.modifiers.ExquisitoLootModifierProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoBlockTagsProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoEntityTypeTagsProvider;
 import com.gumillea.exquisito.core.data.tags.ExquisitoItemTagsProvider;
+import com.gumillea.exquisito.core.data.tags.ExquisitoMobEffectTagsProvider;
 import com.gumillea.exquisito.core.reg.ExquisitoCauldronInteractions;
 import com.gumillea.exquisito.core.reg.ExquisitoCompostableItems;
 import com.gumillea.exquisito.core.reg.ExquisitoEffects;
@@ -62,6 +63,7 @@ public class Exquisito
         generator.addProvider(includeServer, blockTagsProvider);
         generator.addProvider(includeServer, new ExquisitoItemTagsProvider(generator, blockTagsProvider, existingFileHelper));
         generator.addProvider(includeServer, new ExquisitoEntityTypeTagsProvider(generator, existingFileHelper));
+        generator.addProvider(includeServer, new ExquisitoMobEffectTagsProvider(generator, existingFileHelper));
         generator.addProvider(includeServer, new ExquisitoLootModifierProvider(generator));
     }
 }

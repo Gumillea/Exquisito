@@ -31,6 +31,7 @@ public class ExquisitoCompostableItems {
         //Others
         DataUtil.registerCompostable(ExquisitoItems.CHORUS_KHANOM_CHAN.get(), 0.65F);
         DataUtil.registerCompostable(ExquisitoItems.ENLIGHTENED_BATTENBERG_CAKE.get(), 0.85F);
+        DataUtil.registerCompostable(ExquisitoItems.BELOVED_BATTENBERG_CAKE.get(), 0.85F);
         DataUtil.registerCompostable(ExquisitoItems.JELLY_FILLED_CHOCOLATE.get(), 0.85F);
         DataUtil.registerCompostable(ExquisitoItems.CHOCOLATE_RINGLING.get(), 1.00F);
     }
