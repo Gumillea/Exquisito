@@ -13,9 +13,14 @@ public class WarzipanEffect extends MobEffect {
         }
 
     @Override
-    public void removeAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
-        entity.addEffect(new MobEffectInstance(ExquisitoEffects.MODULATION.get(), 600));
-        super.removeAttributeModifiers(entity, attributeMap, amplifier);
+    public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+        super.addAttributeModifiers(entity, attributeMap, amplifier);
+
+        if (entity.hasEffect(ExquisitoEffects.MODULATION.get())) {
+            entity.removeEffect(ExquisitoEffects.MODULATION.get());
+            entity.addEffect(new MobEffectInstance(this, 600, amplifier + 1));
+        }
+
     }
 
 }

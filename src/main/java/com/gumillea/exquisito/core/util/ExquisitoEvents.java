@@ -12,10 +12,12 @@ import com.teamabnormals.neapolitan.core.other.tags.NeapolitanMobEffectTags;
 import com.teamabnormals.neapolitan.core.registry.NeapolitanMobEffects;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -244,8 +246,9 @@ public class ExquisitoEvents {
         if (entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()) != null) {
             ITagManager<MobEffect> mobEffectTags = ForgeRegistries.MOB_EFFECTS.tags();
             if (mobEffectTags != null && !mobEffectTags.getTag(NeapolitanMobEffectTags.UNAFFECTED_BY_VANILLA_SCENT).contains(effect)) {
-                float amplifier = entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()).getAmplifier();
-                entity.heal(amplifier + 1.0F);
+                float amplifier = entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()).getAmplifier() + 1.0f;
+                entity.heal(amplifier * 2);
+
                 event.setResult(Event.Result.DENY);
             }
         }
@@ -260,9 +263,11 @@ public class ExquisitoEvents {
         if (entity.getEffect(ExquisitoEffects.MODULATION.get()) != null
                 && entity.getEffect(ExquisitoEffects.LOVE_DELUXE.get()) == null
                 && entity.getEffect(NeapolitanMobEffects.VANILLA_SCENT.get()) == null
-                && amount + entity.getHealth() > entity.getMaxHealth()){
+                && amount + entity.getHealth() > entity.getMaxHealth()) {
+
             int m_d = entity.getEffect(ExquisitoEffects.MODULATION.get()).getDuration();
             int m_a = entity.getEffect(ExquisitoEffects.MODULATION.get()).getAmplifier();
+
             entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, m_d, m_a));
             entity.getCommandSenderWorld().playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.MUD_BREAK, SoundSource.PLAYERS, 1.0F, 1.5F);
             entity.removeEffect(ExquisitoEffects.MODULATION.get());

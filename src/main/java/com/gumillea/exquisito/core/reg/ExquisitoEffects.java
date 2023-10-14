@@ -1,9 +1,6 @@
 package com.gumillea.exquisito.core.reg;
 
-import com.gumillea.exquisito.common.effect.WarzipanEffect;
-import com.gumillea.exquisito.common.effect.EarendelEffect;
-import com.gumillea.exquisito.common.effect.FuchsiaGooEffect;
-import com.gumillea.exquisito.common.effect.MorgothEffect;
+import com.gumillea.exquisito.common.effect.*;
 import com.gumillea.exquisito.core.Exquisito;
 import com.teamabnormals.blueprint.common.effect.BlueprintMobEffect;
 import net.minecraft.world.effect.MobEffect;
@@ -14,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ExquisitoEffects {
     public static final DeferredRegister<MobEffect> EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, Exquisito.MODID);
-    public static final RegistryObject<MobEffect> DIVER_DOWN = EFFECTS.register("diver_down", () -> new WarzipanEffect(MobEffectCategory.BENEFICIAL, 0x4896B3));
+    public static final RegistryObject<MobEffect> DIVER_DOWN = EFFECTS.register("diver_down", DiverDownEffect::new);
     public static final RegistryObject<MobEffect> EARENDEL = EFFECTS.register("earendel", EarendelEffect::new);
     public static final RegistryObject<MobEffect> FUCHSIA_GOO = EFFECTS.register("fuchsia_goo", FuchsiaGooEffect::new);
     public static final RegistryObject<MobEffect> LOVE_DELUXE = EFFECTS.register("love_deluxe", () -> new WarzipanEffect(MobEffectCategory.BENEFICIAL, 0xD389C3));
