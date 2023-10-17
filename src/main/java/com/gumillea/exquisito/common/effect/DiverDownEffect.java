@@ -18,7 +18,7 @@ public class DiverDownEffect extends WarzipanEffect{
         LevelAccessor world = entity.level;
 
         if (entity.isFallFlying() && !entity.isShiftKeyDown()) {
-            if (entity.getY() < world.getMinBuildHeight() || entity.isInFluidType()) {
+            if (entity.getY() < world.getMinBuildHeight() - 10 || entity.isInFluidType()) {
                 entity.playSound(SoundEvents.FIREWORK_ROCKET_BLAST, 1.5F, 1.5F);
                 entity.setDeltaMovement(entity.getDeltaMovement().add(0, 3.2D, 0));
             }

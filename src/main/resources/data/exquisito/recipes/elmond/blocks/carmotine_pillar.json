@@ -8,18 +8,14 @@
   ],
   "pattern": [
     " A ",
-    "ABA",
     " A "
   ],
   "key": {
     "A": {
-      "item": "exquisito:carmotine"
-    },
-    "B": {
-      "item": "minecraft:glowstone"
+      "item": "exquisito:carmotine_slab"
     }
   },
   "result": {
-    "item": "exquisito:battenlight"
+    "item": "exquisito:carmotine_pillar"
   }
 }

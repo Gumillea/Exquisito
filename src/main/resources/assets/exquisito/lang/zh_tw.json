@@ -90,5 +90,16 @@
     "item.exquisito.halo_halo": "哈囉哈囉",
     "item.exquisito.jelly_filled_chocolate": "甜膠餡朱古力",
     "item.exquisito.raw_stalker_skewer": "生循跡獸烤串",
-    "item.exquisito.stalker_skewer": "熟循跡獸烤串"
+    "item.exquisito.stalker_skewer": "熟循跡獸烤串",
+    "block.exquisito.carmotine_slab": "Carmotine Slab",
+    "block.exquisito.carmotine_stairs": "Carmotine Stairs",
+    "block.exquisito.carmotine_brick_slab": "Carmotine Brick Slab",
+    "block.exquisito.carmotine_brick_stairs": "Carmotine Brick Stairs",
+    "block.exquisito.abandoned_vessel": "Abandoned Vessel",
+    "effect.exquisito.diver_down": "Diver Down",
+    "effect.exquisito.love_deluxe": "Love Deluxe",
+    "effect.exquisito.monkey_majik": "Monkey Majik",
+    "effect.exquisito.oblivion": "Oblivion",
+    "item.exquisito.carmotine": "Carmotine",
+    "item.exquisito.beloved_battenberg_cake": "Beloved Battenberg Cake"
 }

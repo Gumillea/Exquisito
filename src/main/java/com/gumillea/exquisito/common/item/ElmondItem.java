@@ -22,10 +22,10 @@ public class ElmondItem extends Item {
         BlockState ow_crop = ExquisitoBlocks.OVERWORLD_ELMOND_CROP.get().defaultBlockState();
         BlockState ed_crop = ExquisitoBlocks.END_ELMOND_FLOWER.get().defaultBlockState();
 
-        if (level.dimension() == Level.OVERWORLD && ow_crop.canSurvive(level, pos.above(1))){
+        if (level.dimension() == Level.OVERWORLD && ow_crop.canSurvive(level, pos.above(1))) {
             level.playSound(context.getPlayer(), pos.above(1), SoundEvents.CROP_PLANTED, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.4F + 0.8F);
             level.setBlock(pos.above(1), ow_crop, 3);
-        } else if (level.dimension() == Level.END && ed_crop.canSurvive(level, pos.above(1))){
+        } else if (level.dimension() == Level.END && ed_crop.canSurvive(level, pos.above(1))) {
             level.playSound(context.getPlayer(), pos.above(1), SoundEvents.MUD_PLACE, SoundSource.BLOCKS, 1.0F, level.getRandom().nextFloat() * 0.4F + 0.8F);
             level.setBlock(pos.above(1), ed_crop, 3);
         } else {

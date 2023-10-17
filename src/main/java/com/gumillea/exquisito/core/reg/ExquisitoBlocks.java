@@ -35,8 +35,10 @@ public class ExquisitoBlocks {
     public static final RegistryObject<Block> WARZIPAN_BLOCK = HELPER.createBlock("warzipan_block", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> WARZIPAN_BRICKS = HELPER.createBlock("warzipan_bricks", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> WARZIPAN_BRICK_SLAB = HELPER.createBlock("warzipan_brick_slab", () -> new SlabBlock(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> WARZIPAN_BRICK_STAIRS = HELPER.createBlock("warzipan_brick_stairs", () -> new StairBlock(() -> WARZIPAN_BRICKS.get().defaultBlockState(),Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICKS = HELPER.createBlock("dessert_checkered_bricks", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICK_SLAB = HELPER.createBlock("dessert_checkered_brick_slab", () -> new SlabBlock(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> DESSERT_CHECKERED_BRICK_STAIRS = HELPER.createBlock("dessert_checkered_brick_stairs", () -> new StairBlock(() -> DESSERT_CHECKERED_BRICKS.get().defaultBlockState(),Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> CARMOTINE_BLOCK = HELPER.createBlock("carmotine_block", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> CARMOTINE_SLAB = HELPER.createBlock("carmotine_slab", () -> new SlabBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> CARMOTINE_STAIRS = HELPER.createBlock("carmotine_stairs", () -> new StairBlock(() -> CARMOTINE_BLOCK.get().defaultBlockState(),Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
@@ -47,6 +49,7 @@ public class ExquisitoBlocks {
     public static final RegistryObject<Block> WEATHERED_CARMOTINE_MURAL = HELPER.createBlock("weathered_carmotine_mural", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> RUINED_CARMOTINE_MURAL = HELPER.createBlock("ruined_carmotine_mural", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> CARMOTINE_LADDER = HELPER.createBlock("carmotine_ladder", () -> new LadderBlock(Properties.CARMOTINE_LADDER), (CreativeModeTab.TAB_DECORATIONS));
+    public static final RegistryObject<Block> ABANDONED_VESSEL = HELPER.createBlock("abandoned_vessel", () -> new Block(Properties.ABANDONED_VESSEL), (CreativeModeTab.TAB_DECORATIONS));
     public static final RegistryObject<Block> BATTENLIGHT = HELPER.createBlock("battenlight", () -> new Block(Properties.BATTENLIGHT), (CreativeModeTab.TAB_DECORATIONS));
 
     public static final RegistryObject<Block> OVERWORLD_ELMOND_CROP = HELPER.createBlockNoItem("overworld_elmond_crop", () -> new OverworldElmondCropBlock(Properties.OVERWORLD_ELMOND_CROP));
@@ -85,6 +88,7 @@ public class ExquisitoBlocks {
         public static final BlockBehaviour.Properties WARZIPAN_BLOCK = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(1.0F, 4.0F).sound(SoundType.STONE);
         public static final BlockBehaviour.Properties CARMOTINE_BLOCK = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.DEEPSLATE);
         public static final BlockBehaviour.Properties CARMOTINE_LADDER = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).strength(0.4F).sound(SoundType.DEEPSLATE).noOcclusion();
+        public static final BlockBehaviour.Properties ABANDONED_VESSEL = BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_MAGENTA).strength(0.1F).noOcclusion().sound(SoundType.GLASS).lightLevel(value -> 6);
         public static final BlockBehaviour.Properties BATTENLIGHT = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.RAW_IRON).strength(0.5F).sound(SoundType.DEEPSLATE).lightLevel(value -> 15);
         public static final BlockBehaviour.Properties OVERWORLD_ELMOND_CROP = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).instabreak().noCollission().sound(SoundType.GRASS);
         public static final BlockBehaviour.Properties OVERWORLD_ELMOND_FRUIT = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.SNOW).instabreak().noCollission().sound(SoundType.MUD).lightLevel(value -> 10);

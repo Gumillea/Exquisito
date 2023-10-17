@@ -72,8 +72,8 @@ public class ExquisitoEvents {
                 attacker.teleportTo(attackerevent.getTargetX(), attackerevent.getTargetY(), attackerevent.getTargetZ());
                 target.resetFallDistance();
                 attacker.resetFallDistance();
-                target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.MASTER, 1.0F, 1.0F);
-                attacker.getCommandSenderWorld().playSound(null, attacker.getX(), attacker.getY(), attacker.getZ(), SoundEvents.ENDERMAN_TELEPORT, SoundSource.MASTER, 1.0F, 1.0F);
+                target.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
+                attacker.playSound(SoundEvents.ENDERMAN_TELEPORT, 1.0F, 1.0F);
             }
             //Modulation Effects 1
             if (attacker.getEffect(ExquisitoEffects.MODULATION.get()) != null) {
@@ -84,14 +84,14 @@ public class ExquisitoEvents {
                 } else {
                     event.setAmount(damage * (1.0F + (m_a + 1) * 0.3F));
                 }
-                target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.MUD_BREAK, SoundSource.PLAYERS, 1.0F, 1.5F);
+                attacker.playSound(SoundEvents.MUD_BREAK, 1.5F, 1.5F);
                 attacker.removeEffect(ExquisitoEffects.MODULATION.get());
             }
         }
         //Fuchsia Goo Effect
         if (target.getEffect(ExquisitoEffects.FUCHSIA_GOO.get()) != null) {
             MobEffectInstance fg1 = target.getEffect(ExquisitoEffects.FUCHSIA_GOO.get());
-            target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.SLIME_ATTACK, SoundSource.NEUTRAL, 1.0F, 3.0F);
+            target.playSound(SoundEvents.SLIME_BLOCK_HIT, 1.5F, 1.5F);
             if (event.getSource() != DamageSource.OUT_OF_WORLD && event.getSource() != DamageSource.STARVE) {
                 if (fg1.getAmplifier() < 5) {
                     event.setAmount(damage - damage * ((fg1.getAmplifier() + 1) * 0.2F));
@@ -124,11 +124,11 @@ public class ExquisitoEvents {
             for (LivingEntity targets : world.getNearbyEntities(LivingEntity.class, TargetingConditions.DEFAULT.selector((livingEntity) -> livingEntity != target),
                     target, target.getBoundingBox().inflate(target.getBbWidth() + amplifier * 6.0D + fallDistance * 0.15D, target.getBbHeight() * 2.0D, target.getBbWidth() + amplifier * 6.0D + fallDistance * 0.15D))) {
                 if (fallDistance < 10 && ExquisitoConfig.Common.SPACE_DIVING_LIMITATION.get()) {
-                    target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.NEUTRAL, 0.3F, 3.5F);
+                    targets.playSound(SoundEvents.WARDEN_SONIC_BOOM, 0.3F, 3.5F);
                     targets.hurt(DamageSource.explosion(target), (fallDistance * (0.25F + amplifier * 0.15F)));
                     targets.push(0, 0.4D, 0);
                 } else {
-                    target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.WARDEN_SONIC_BOOM, SoundSource.NEUTRAL, 0.5F, 2.5F);
+                    targets.playSound(SoundEvents.WARDEN_SONIC_BOOM, 0.3F, 3.5F);
                     targets.hurt(DamageSource.explosion(target), (fallDistance * (0.5F + amplifier * 0.15F)));
                     targets.push(0, 0.6D, 0);
                     targets.addEffect(new MobEffectInstance(MobEffects.LEVITATION, 40 + (amplifier * 20)));
@@ -156,7 +156,7 @@ public class ExquisitoEvents {
             } else {
                 target.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, m_d * 2, m_a));
             }
-            target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.MUD_BREAK, SoundSource.PLAYERS, 1.0F, 1.5F);
+            target.playSound(SoundEvents.MUD_BREAK, 1.5F, 1.5F);
             target.removeEffect(ExquisitoEffects.MODULATION.get());
         }
 
@@ -269,7 +269,7 @@ public class ExquisitoEvents {
             int m_a = entity.getEffect(ExquisitoEffects.MODULATION.get()).getAmplifier();
 
             entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, m_d, m_a));
-            entity.getCommandSenderWorld().playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.MUD_BREAK, SoundSource.PLAYERS, 1.0F, 1.5F);
+            entity.playSound(SoundEvents.MUD_BREAK, 1.5F, 1.5F);
             entity.removeEffect(ExquisitoEffects.MODULATION.get());
         }
     }

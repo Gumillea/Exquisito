@@ -1,6 +1,8 @@
-// 1.19.2	2023-10-08T19:08:11.2820479	Tags for minecraft:block
+// 1.19.2	2023-10-16T22:38:37.881137	Tags for minecraft:block
 76f23e5c386e7d8a273783ed2f98e4751a06c8b6 data/exquisito/tags/blocks/ennegel_replaceable.json
 2777fcdfea5aca7766ecdbc4e3f14a05fa9c94db data/minecraft/tags/blocks/climbable.json
 19c5fc3c5695d8a9646bc78fee908435005e57e3 data/minecraft/tags/blocks/mineable/hoe.json
-3699fa248640c6f47153a22b4637b483d04106e3 data/minecraft/tags/blocks/mineable/pickaxe.json
+f41538b6d25b3ed96755ded293e71136c66c008e data/minecraft/tags/blocks/mineable/pickaxe.json
 31416aeabe104df740a80e08a3bb3cfe31a170a1 data/minecraft/tags/blocks/mineable/shovel.json
+b8e3229b2e3107823951b44d84f55eec0117b99b data/minecraft/tags/blocks/slabs.json
+eec79303b09984adb71e4e54c2d7a5509c00d8d1 data/minecraft/tags/blocks/stairs.json

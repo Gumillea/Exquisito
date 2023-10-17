@@ -31,6 +31,7 @@
     "block.exquisito.carmotine_pillar": "Carmotine Pillar",
     "block.exquisito.weathered_carmotine_mural": "Weathered Carmotine Mural",
     "block.exquisito.ruined_carmotine_mural": "Ruined Carmotine Mural",
+    "block.exquisito.abandoned_vessel": "Abandoned Vessel",
     "block.exquisito.battenlight": "Battenlight",
 
     "effect.exquisito.earendel": "Earendel",
@@ -58,6 +59,7 @@
     "item.exquisito.chorus_milkshake": "Chorus Milkshake",
     "item.exquisito.chorus_cookie": "Chorus Cookie",
 
+    "item.exquisito.carmotine": "Carmotine",
     "item.exquisito.elmond": "Elmond",
     "item.exquisito.warzipan": "Warzipan",
     "item.exquisito.zure_berry_warzipan": "Azure Berry-shaped Warzipan",

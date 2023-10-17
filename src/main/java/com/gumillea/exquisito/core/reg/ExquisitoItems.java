@@ -60,6 +60,7 @@ public class ExquisitoItems {
 
     //Elmond Flavor
     public static final RegistryObject<Item> ELMOND = HELPER.createItem("elmond", () -> new ElmondItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> CARMOTINE = HELPER.createItem("carmotine", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> WARZIPAN = HELPER.createItem("warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.WARZIPAN).tab(CreativeModeTab.TAB_FOOD)));
 
     public static final RegistryObject<Item> JELLY_RING_WARZIPAN = HELPER.createItem("jelly_ring_warzipan", () -> new Item(new Item.Properties().food(ExquisitoFoods.JELLY_RING_WARZIPAN).tab(ModCompat.ENLIGHTEND_ITEM_ALTERNATE)));

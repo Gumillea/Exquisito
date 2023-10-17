@@ -18,17 +18,13 @@ public class FuchsiaGooEffect extends MobEffect {
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         int duration = entity.getEffect(ExquisitoEffects.FUCHSIA_GOO.get()).getDuration();
+        double amount = amplifier < 9 ? 0.6D + (amplifier + 1) * 0.6D : 6.6D;
         if (duration == 2) {
             if (entity.isPassenger()) {
                 entity.stopRiding();
             }
             entity.playSound(SoundEvents.FIREWORK_ROCKET_BLAST, 1.5F, 1.5F);
-            entity.setDeltaMovement(Vec3.ZERO);
-            if (amplifier < 9) {
-                entity.push(0, 0.6D + (amplifier + 1) * 0.6D, 0);
-            } else {
-                entity.push(0, 6.6D, 0);
-            }
+            entity.setDeltaMovement(entity.getDeltaMovement().add(0, amount, 0));
         }
     }
 
