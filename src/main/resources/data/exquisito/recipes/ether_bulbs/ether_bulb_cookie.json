@@ -17,13 +17,13 @@
   ],
   "ingredients": [
     {
-      "tag": "forge:crops/wheat"
-    },
-    {
-      "tag": "forge:crops/wheat"
-    },
-    {
       "item": "byg:ether_bulbs"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
     }
   ],
   "result": {

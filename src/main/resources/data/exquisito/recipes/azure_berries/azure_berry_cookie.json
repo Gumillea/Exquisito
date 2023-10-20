@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+
   "conditions": [
     {
       "type": "forge:and",
@@ -17,13 +17,13 @@
   ],
   "ingredients": [
     {
-      "tag": "forge:crops/wheat"
-    },
-    {
-      "tag": "forge:crops/wheat"
-    },
-    {
       "item": "enlightened_end:azure_berries"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
     }
   ],
   "result": {

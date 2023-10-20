@@ -5,8 +5,8 @@
       "type": "forge:and",
       "values": [
         {
-          "type": "forge:item_exists",
-          "item": "enlightened_end:squished_bouncer"
+          "type": "forge:mod_loaded",
+          "modid": "enlightened_end"
         },
         {
           "type": "exquisito:config",
@@ -16,20 +16,16 @@
     }
   ],
   "pattern": [
-    " A ",
-    "ABA",
-    " A "
+    "AAA",
+    "AAA",
+    "AAA"
   ],
   "key": {
     "A": {
-      "item": "enlightened_end:ennegel_glob"
-    },
-    "B": {
-      "item": "enlightened_end:squished_bouncer"
+      "item": "exquisito:jelly_ring"
     }
   },
   "result": {
-    "item": "exquisito:jelly_ring",
-    "count": 4
+    "item": "exquisito:jelly_ring_crate"
   }
 }

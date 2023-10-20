@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "top": "exquisito:block/jelly_ring_crate_top",
+    "bottom": "exquisito:block/jelly_ring_crate_bottom",
+    "side": "exquisito:block/jelly_ring_crate_side"
+  }
+}

@@ -27,6 +27,7 @@ public class ExquisitoBlockTagsProvider extends BlockTagsProvider {
                 ExquisitoBlocks.ZURE_BERRY_ICE_CREAM_BLOCK.get()
         );
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
+                ExquisitoBlocks.ABANDONED_VESSEL.get(),
                 ExquisitoBlocks.CARMOTINE_BLOCK.get(),
                 ExquisitoBlocks.CARMOTINE_SLAB.get(),
                 ExquisitoBlocks.CARMOTINE_STAIRS.get(),

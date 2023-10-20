@@ -138,7 +138,7 @@ public class ExquisitoEvents {
                 if (target instanceof Player && ExquisitoConfig.Client.SPACE_DIVING_SFX.get()) {
                     Minecraft.getInstance().gameRenderer.displayItemActivation(new ItemStack(ExquisitoItems.SPACE_DIVING_ICON.get()));
                 }
-                target.getCommandSenderWorld().playSound(null, target.getX(), target.getY(), target.getZ(), SoundEvents.TOTEM_USE, SoundSource.PLAYERS, 1.0F, 1.0F);
+                target.playSound(SoundEvents.TOTEM_USE, 0.3F, 3.5F);
                 event.setAmount(health * 0.9F);
             }
             target.removeEffect(ExquisitoEffects.SPACE_DIVING.get());
@@ -147,7 +147,7 @@ public class ExquisitoEvents {
         if (target.getEffect(ExquisitoEffects.MODULATION.get()) != null) {
             int m_d = target.getEffect(ExquisitoEffects.MODULATION.get()).getDuration();
             int m_a = target.getEffect(ExquisitoEffects.MODULATION.get()).getAmplifier();
-            if (event.getSource() == DamageSource.OUT_OF_WORLD && target.getY() < -64) {
+            if (event.getSource() == DamageSource.OUT_OF_WORLD && target.getY() < world.getMinBuildHeight()) {
                 target.addEffect(new MobEffectInstance(MobEffects.LEVITATION, m_d, 9 + m_a));
             } else if (event.getSource() == DamageSource.LAVA || event.getSource() == DamageSource.ON_FIRE)  {
                 target.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, m_d * 2, m_a));

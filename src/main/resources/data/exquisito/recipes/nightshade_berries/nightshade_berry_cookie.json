@@ -17,13 +17,13 @@
   ],
   "ingredients": [
     {
-      "tag": "forge:crops/wheat"
-    },
-    {
-      "tag": "forge:crops/wheat"
-    },
-    {
       "item": "byg:nightshade_berries"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
     }
   ],
   "result": {

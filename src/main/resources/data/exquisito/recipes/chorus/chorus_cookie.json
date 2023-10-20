@@ -1,22 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "conditions": [
     {
       "type": "exquisito:config",
       "value": "enable_chorus_flavor"
     }
   ],
-  "pattern": [
-    "ABA"
-  ],
-  "key": {
-    "A": {
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
       "tag": "forge:crops/wheat"
     },
-    "B": {
-      "item": "minecraft:chorus_fruit"
+    {
+      "tag": "forge:crops/wheat"
     }
-  },
+  ],
   "result": {
     "item": "exquisito:chorus_cookie",
     "count": 8

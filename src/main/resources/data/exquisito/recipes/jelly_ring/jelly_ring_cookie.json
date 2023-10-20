@@ -17,13 +17,13 @@
   ],
   "ingredients": [
     {
-      "tag": "forge:crops/wheat"
-    },
-    {
-      "tag": "forge:crops/wheat"
-    },
-    {
       "item": "exquisito:jelly_ring"
+    },
+    {
+      "tag": "forge:crops/wheat"
+    },
+    {
+      "tag": "forge:crops/wheat"
     }
   ],
   "result": {

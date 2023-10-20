@@ -61,6 +61,7 @@ public class ExquisitoBlocks {
     // Jelly Ring Flavor
     public static final RegistryObject<Block> JELLY_RING_ICE_CREAM_BLOCK = HELPER.createBlock("jelly_ring_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
     public static final RegistryObject<Block> JELLY_RING_CAKE = HELPER.createBlockNoItem("jelly_ring_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.JELLY_RING_CAKE, Properties.JELLY_RING_CAKE));
+    public static final RegistryObject<Block> JELLY_RING_CRATE = HELPER.createBlock("jelly_ring_crate", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
 
     //Nightshade Berry Flavor
     public static final RegistryObject<Block> NIGHTSHADE_BERRY_ICE_CREAM_BLOCK = HELPER.createBlock("nightshade_berry_ice_cream_block", () -> new Block(Properties.NIGHTSHADE_BERRY_ICE_CREAM_BLOCK), (ModCompat.BYG_BLOCK));
@@ -88,11 +89,14 @@ public class ExquisitoBlocks {
         public static final BlockBehaviour.Properties WARZIPAN_BLOCK = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.RAW_IRON).strength(1.0F, 4.0F).sound(SoundType.STONE);
         public static final BlockBehaviour.Properties CARMOTINE_BLOCK = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).requiresCorrectToolForDrops().strength(2.0F, 6.0F).sound(SoundType.DEEPSLATE);
         public static final BlockBehaviour.Properties CARMOTINE_LADDER = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_MAGENTA).strength(0.4F).sound(SoundType.DEEPSLATE).noOcclusion();
-        public static final BlockBehaviour.Properties ABANDONED_VESSEL = BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_MAGENTA).strength(0.1F).noOcclusion().sound(SoundType.GLASS).lightLevel(value -> 6);
+        public static final BlockBehaviour.Properties ABANDONED_VESSEL = BlockBehaviour.Properties.of(Material.GLASS, MaterialColor.COLOR_MAGENTA).strength(0.4F).noOcclusion().sound(SoundType.GLASS).lightLevel(value -> 6);
         public static final BlockBehaviour.Properties BATTENLIGHT = BlockBehaviour.Properties.of(Material.STONE, MaterialColor.RAW_IRON).strength(0.5F).sound(SoundType.DEEPSLATE).lightLevel(value -> 15);
         public static final BlockBehaviour.Properties OVERWORLD_ELMOND_CROP = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).instabreak().noCollission().sound(SoundType.GRASS);
         public static final BlockBehaviour.Properties OVERWORLD_ELMOND_FRUIT = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.SNOW).instabreak().noCollission().sound(SoundType.MUD).lightLevel(value -> 10);
         public static final BlockBehaviour.Properties END_ELMOND = BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_RED).strength(0.5F, 2.0F).noOcclusion().sound(SoundType.MUD);
+
+        //Crates
+        public static final BlockBehaviour.Properties JELLY_RING_CRATE = BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.COLOR_PINK).strength(1.5F).sound(SoundType.WOOD);
     }
 }
 
