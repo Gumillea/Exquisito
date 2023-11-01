@@ -30,6 +30,19 @@ public class ExquisitoBlocks {
     public static final RegistryObject<Block> ETHER_BULB_ICE_CREAM_BLOCK = HELPER.createBlock("ether_bulb_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), (ModCompat.BYG_BLOCK));
     public static final RegistryObject<Block> ETHER_BULB_CAKE = HELPER.createBlockNoItem("ether_bulb_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.ETHER_BULB_CAKE, Properties.JELLY_RING_CAKE));
 
+    // Jelly Ring Flavor
+    public static final RegistryObject<Block> JELLY_RING_ICE_CREAM_BLOCK = HELPER.createBlock("jelly_ring_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
+    public static final RegistryObject<Block> JELLY_RING_CAKE = HELPER.createBlockNoItem("jelly_ring_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.JELLY_RING_CAKE, Properties.JELLY_RING_CAKE));
+    public static final RegistryObject<Block> JELLY_RING_CRATE = HELPER.createBlock("jelly_ring_crate", () -> new Block(Properties.JELLY_RING_CRATE), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+
+    //Nightshade Berry Flavor
+    public static final RegistryObject<Block> NIGHTSHADE_BERRY_ICE_CREAM_BLOCK = HELPER.createBlock("nightshade_berry_ice_cream_block", () -> new Block(Properties.NIGHTSHADE_BERRY_ICE_CREAM_BLOCK), (ModCompat.BYG_BLOCK));
+    public static final RegistryObject<Block> NIGHTSHADE_BERRY_CAKE = HELPER.createBlockNoItem("nightshade_berry_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.NIGHTSHADE_BERRY_CAKE, Properties.NIGHTSHADE_BERRY_CAKE));
+
+    //Zure Berry Flavor
+    public static final RegistryObject<Block> ZURE_BERRY_ICE_CREAM_BLOCK = HELPER.createBlock("zure_berry_ice_cream_block", () -> new Block(Properties.ZURE_BERRY_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
+    public static final RegistryObject<Block> ZURE_BERRY_CAKE = HELPER.createBlockNoItem("zure_berry_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.ZURE_BERRY_CAKE, Properties.ZURE_BERRY_CAKE));
+
     //Elmond Flavor
     public static final RegistryObject<Block> ELMOND_BLOCK = HELPER.createBlock("elmond_block", () -> new Block(Properties.ELMOND_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> WARZIPAN_BLOCK = HELPER.createBlock("warzipan_block", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
@@ -57,19 +70,6 @@ public class ExquisitoBlocks {
     public static final RegistryObject<Block> OVERWORLD_ELMOND_FRUIT = HELPER.createBlockNoItem("overworld_elmond_fruit", () -> new OverworldElmondFruitBlock(Properties.OVERWORLD_ELMOND_FRUIT));
     public static final RegistryObject<Block> END_ELMOND_PLANT = HELPER.createBlockNoItem("end_elmond_plant", () -> new EndElmondPlantBlock(Properties.END_ELMOND));
     public static final RegistryObject<Block> END_ELMOND_FLOWER = HELPER.createBlockNoItem("end_elmond_flower", () -> new EndElmondFlowerBlock((EndElmondPlantBlock) ExquisitoBlocks.END_ELMOND_PLANT.get(), Properties.END_ELMOND));
-
-    // Jelly Ring Flavor
-    public static final RegistryObject<Block> JELLY_RING_ICE_CREAM_BLOCK = HELPER.createBlock("jelly_ring_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
-    public static final RegistryObject<Block> JELLY_RING_CAKE = HELPER.createBlockNoItem("jelly_ring_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.JELLY_RING_CAKE, Properties.JELLY_RING_CAKE));
-    public static final RegistryObject<Block> JELLY_RING_CRATE = HELPER.createBlock("jelly_ring_crate", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-
-    //Nightshade Berry Flavor
-    public static final RegistryObject<Block> NIGHTSHADE_BERRY_ICE_CREAM_BLOCK = HELPER.createBlock("nightshade_berry_ice_cream_block", () -> new Block(Properties.NIGHTSHADE_BERRY_ICE_CREAM_BLOCK), (ModCompat.BYG_BLOCK));
-    public static final RegistryObject<Block> NIGHTSHADE_BERRY_CAKE = HELPER.createBlockNoItem("nightshade_berry_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.NIGHTSHADE_BERRY_CAKE, Properties.NIGHTSHADE_BERRY_CAKE));
-
-    //Zure Berry Flavor
-    public static final RegistryObject<Block> ZURE_BERRY_ICE_CREAM_BLOCK = HELPER.createBlock("zure_berry_ice_cream_block", () -> new Block(Properties.ZURE_BERRY_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
-    public static final RegistryObject<Block> ZURE_BERRY_CAKE = HELPER.createBlockNoItem("zure_berry_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.ZURE_BERRY_CAKE, Properties.ZURE_BERRY_CAKE));
 
     static class Properties {
         //Ice Cream Blocks

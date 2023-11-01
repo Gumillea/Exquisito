@@ -48,6 +48,11 @@ public class OverworldElmondCropBlock extends CropBlock implements BonemealableB
     }
 
     @Override
+    public boolean isValidBonemealTarget(BlockGetter p_52258_, BlockPos p_52259_, BlockState p_52260_, boolean p_52261_) {
+        return true;
+    }
+
+    @Override
     public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource source) {
         int i = state.getValue(AGE);
         if (level.getRawBrightness(pos.above(), 0) >= 6
