@@ -1,5 +1,30 @@
 {
   "variants": {
-    "": { "model": "exquisito:block/jelly_ring_crate" }
+    "facing=down": {
+      "model": "exquisito:block/jelly_ring_crate",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "exquisito:block/jelly_ring_crate",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "exquisito:block/jelly_ring_crate",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "exquisito:block/jelly_ring_crate",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "exquisito:block/jelly_ring_crate"
+    },
+    "facing=west": {
+      "model": "exquisito:block/jelly_ring_crate",
+      "x": 90,
+      "y": 270
+    }
   }
 }

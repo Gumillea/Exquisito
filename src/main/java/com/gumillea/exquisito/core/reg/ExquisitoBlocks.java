@@ -3,6 +3,8 @@ package com.gumillea.exquisito.core.reg;
 import com.gumillea.exquisito.common.block.*;
 import com.gumillea.exquisito.core.Exquisito;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
+import com.teamabnormals.blueprint.common.block.BlueprintDirectionalBlock;
+import com.teamabnormals.blueprint.common.block.BlueprintLadderBlock;
 import com.teamabnormals.blueprint.core.util.registry.BlockSubRegistryHelper;
 import com.teamabnormals.neapolitan.common.block.MilkshakeCauldronBlock;
 import net.minecraft.world.item.CreativeModeTab;
@@ -33,7 +35,7 @@ public class ExquisitoBlocks {
     // Jelly Ring Flavor
     public static final RegistryObject<Block> JELLY_RING_ICE_CREAM_BLOCK = HELPER.createBlock("jelly_ring_ice_cream_block", () -> new Block(Properties.JELLY_RING_ICE_CREAM_BLOCK), ModCompat.ENLIGHTEND_BLOCK);
     public static final RegistryObject<Block> JELLY_RING_CAKE = HELPER.createBlockNoItem("jelly_ring_cake", () -> new ExquisitoCakeBlock(ExquisitoItems.ExquisitoFoods.JELLY_RING_CAKE, Properties.JELLY_RING_CAKE));
-    public static final RegistryObject<Block> JELLY_RING_CRATE = HELPER.createBlock("jelly_ring_crate", () -> new Block(Properties.JELLY_RING_CRATE), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> JELLY_RING_CRATE = HELPER.createBlock("jelly_ring_crate", () -> new BlueprintDirectionalBlock(Properties.JELLY_RING_CRATE), (CreativeModeTab.TAB_BUILDING_BLOCKS));
 
     //Nightshade Berry Flavor
     public static final RegistryObject<Block> NIGHTSHADE_BERRY_ICE_CREAM_BLOCK = HELPER.createBlock("nightshade_berry_ice_cream_block", () -> new Block(Properties.NIGHTSHADE_BERRY_ICE_CREAM_BLOCK), (ModCompat.BYG_BLOCK));
@@ -52,16 +54,17 @@ public class ExquisitoBlocks {
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICKS = HELPER.createBlock("dessert_checkered_bricks", () -> new Block(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICK_SLAB = HELPER.createBlock("dessert_checkered_brick_slab", () -> new SlabBlock(Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> DESSERT_CHECKERED_BRICK_STAIRS = HELPER.createBlock("dessert_checkered_brick_stairs", () -> new StairBlock(() -> DESSERT_CHECKERED_BRICKS.get().defaultBlockState(),Properties.WARZIPAN_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_BLOCK = HELPER.createBlock("carmotine_block", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_SLAB = HELPER.createBlock("carmotine_slab", () -> new SlabBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_STAIRS = HELPER.createBlock("carmotine_stairs", () -> new StairBlock(() -> CARMOTINE_BLOCK.get().defaultBlockState(),Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_BRICKS = HELPER.createBlock("carmotine_bricks", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_BRICK_SLAB = HELPER.createBlock("carmotine_brick_slab", () -> new SlabBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_BRICK_STAIRS = HELPER.createBlock("carmotine_brick_stairs", () -> new StairBlock(() -> CARMOTINE_BRICKS.get().defaultBlockState(),Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+
+    public static final RegistryObject<Block> CARMOTINE_BLOCK = HELPER.createBlock("carmotine_block", () -> new CarmotineBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> CARMOTINE_SLAB = HELPER.createBlock("carmotine_slab", () -> new CarmotineSlabBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> CARMOTINE_STAIRS = HELPER.createBlock("carmotine_stairs", () -> new CarmotineStairBlock(() -> CARMOTINE_BLOCK.get().defaultBlockState(),Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> CARMOTINE_BRICKS = HELPER.createBlock("carmotine_bricks", () -> new CarmotineBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> CARMOTINE_BRICK_SLAB = HELPER.createBlock("carmotine_brick_slab", () -> new CarmotineSlabBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> CARMOTINE_BRICK_STAIRS = HELPER.createBlock("carmotine_brick_stairs", () -> new CarmotineStairBlock(() -> CARMOTINE_BRICKS.get().defaultBlockState(),Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
     public static final RegistryObject<Block> CARMOTINE_PILLAR = HELPER.createBlock("carmotine_pillar", () -> new RotatedPillarBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> WEATHERED_CARMOTINE_MURAL = HELPER.createBlock("weathered_carmotine_mural", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> RUINED_CARMOTINE_MURAL = HELPER.createBlock("ruined_carmotine_mural", () -> new Block(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
-    public static final RegistryObject<Block> CARMOTINE_LADDER = HELPER.createBlock("carmotine_ladder", () -> new LadderBlock(Properties.CARMOTINE_LADDER), (CreativeModeTab.TAB_DECORATIONS));
+    public static final RegistryObject<Block> WEATHERED_CARMOTINE_MURAL = HELPER.createBlock("weathered_carmotine_mural", () -> new CarmotineBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> RUINED_CARMOTINE_MURAL = HELPER.createBlock("ruined_carmotine_mural", () -> new CarmotineBlock(Properties.CARMOTINE_BLOCK), (CreativeModeTab.TAB_BUILDING_BLOCKS));
+    public static final RegistryObject<Block> CARMOTINE_LADDER = HELPER.createBlock("carmotine_ladder", () -> new BlueprintLadderBlock(Properties.CARMOTINE_LADDER), (CreativeModeTab.TAB_DECORATIONS));
     public static final RegistryObject<Block> ABANDONED_VESSEL = HELPER.createBlock("abandoned_vessel", () -> new Block(Properties.ABANDONED_VESSEL), (CreativeModeTab.TAB_DECORATIONS));
     public static final RegistryObject<Block> BATTENLIGHT = HELPER.createBlock("battenlight", () -> new Block(Properties.BATTENLIGHT), (CreativeModeTab.TAB_DECORATIONS));
 

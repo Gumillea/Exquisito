@@ -24,7 +24,6 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', '${mod_id}'
             property "mixin.env.remapRefMap", "true"
             property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-
             mods {
                 exquisito {
                     source sourceSets.main
@@ -40,7 +39,6 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', '${mod_id}'
             property "mixin.env.remapRefMap", "true"
             property "mixin.env.refMapRemappingFile", "${projectDir}/build/createSrgToMcp/output.srg"
-
             mods {
                 exquisito {
                     source sourceSets.main
