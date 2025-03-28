@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "exquisito:block/carmotine_bricks",
+    "top": "exquisito:block/carmotine_bricks",
+    "side": "exquisito:block/carmotine_bricks"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "exquisito_chorus",
+  "description": {
+    "color": "#643C64",
+    "translate": "trim_material.exquisito.chorus"
+  },
+  "ingredient": "minecraft:popped_chorus_fruit",
+  "item_model_index": -1.0
+}

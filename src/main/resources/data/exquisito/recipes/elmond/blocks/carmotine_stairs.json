@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "exquisito:carmotine_block"
+      },
+      {
+        "item": "exquisito:carmotine_pillar"
+      }
+    ]
+  },
+  "result": {
+    "item": "exquisito:carmotine_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "exquisito_carmotine",
+  "description": {
+    "color": "#E1597F",
+    "translate": "trim_material.exquisito.carmotine"
+  },
+  "ingredient": "exquisito:carmotine",
+  "item_model_index": -1.0
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:azure_berries"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_zure_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "enlightened_end:glow_gourd_slice"
+    },
+    {
+      "item": "enlightened_end:double_cerulean_grass"
+    },
+    {
+      "item": "enlightened_end:azure_berries"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "exquisito:enderneath_salad"
+  }
+}

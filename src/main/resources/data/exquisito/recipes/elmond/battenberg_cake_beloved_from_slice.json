@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "farmersdelight"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:beloved_battenberg_cake_slice"
+    },
+    {
+      "item": "exquisito:beloved_battenberg_cake_slice"
+    },
+    {
+      "item": "exquisito:beloved_battenberg_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "exquisito:beloved_battenberg_cake"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    "A A",
+    "ABA",
+    "A A"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:rods/wooden"
+    },
+    "B": {
+      "item": "exquisito:carmotine_block"
+    }
+  },
+  "result": {
+    "item": "exquisito:carmotine_ladder",
+    "count": 3
+  }
+}

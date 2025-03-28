@@ -1,0 +1,27 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/cake",
+	"textures": {
+		"3": "exquisito:block/nightshade_berry_cake_side0",
+		"4": "exquisito:block/nightshade_berry_cake_side1",
+		"5": "exquisito:block/nightshade_berry_cake_side3",
+		"6": "exquisito:block/nightshade_berry_cake_side4",
+		"bottom": "exquisito:block/nightshade_berry_cake_bottom",
+		"top": "exquisito:block/nightshade_berry_cake_top"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 8, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [1, 0, 1]},
+			"faces": {
+				"north": {"uv": [1, 8, 15, 16], "texture": "#6"},
+				"east": {"uv": [1, 8, 15, 16], "texture": "#5"},
+				"south": {"uv": [1, 8, 15, 16], "texture": "#4"},
+				"west": {"uv": [1, 8, 15, 16], "texture": "#3"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#top"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#bottom"}
+			}
+		}
+	]
+}

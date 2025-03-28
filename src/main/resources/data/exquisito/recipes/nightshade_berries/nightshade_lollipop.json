@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "exquisito:midnight_ingredients"
+          }
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_nightshade_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    " AB",
+    " BA",
+    "C  "
+  ],
+  "key": {
+    "A": {
+      "tag": "exquisito:midnight_ingredients"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "exquisito:nightshade_lollipop"
+  }
+}

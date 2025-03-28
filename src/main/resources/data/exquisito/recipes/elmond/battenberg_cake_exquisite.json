@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:warzipan"
+    },
+    {
+      "item": "exquisito:warzipan"
+    },
+    {
+      "item": "minecraft:chorus_fruit"
+    },
+    {
+      "tag": "forge:fruits/banana"
+    }
+  ],
+  "result": {
+    "item": "exquisito:exquisite_battenberg_cake"
+  }
+}

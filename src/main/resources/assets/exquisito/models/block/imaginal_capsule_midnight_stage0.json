@@ -1,0 +1,6 @@
+{
+  "parent": "exquisito:block/imaginal_capsule_activated",
+  "textures": {
+    "cross": "exquisito:block/midnight_berry_bush_age0"
+  }
+}

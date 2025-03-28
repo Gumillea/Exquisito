@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "exquisito:config",
+          "value": "enable_elmond_flavor"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:azure_berries"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:squished_bouncer"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:enlightened_battenberg_cake_slice"
+    },
+    {
+      "item": "exquisito:enlightened_battenberg_cake_slice"
+    },
+    {
+      "item": "exquisito:enlightened_battenberg_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "exquisito:enlightened_battenberg_cake"
+  }
+}

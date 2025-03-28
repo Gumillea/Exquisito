@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    "AB ",
+    "BA "
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:warzipan"
+    },
+    "B": {
+      "item": "neapolitan:chocolate_bar"
+    }
+  },
+  "result": {
+    "item": "exquisito:dessert_checkered_bricks"
+  }
+}

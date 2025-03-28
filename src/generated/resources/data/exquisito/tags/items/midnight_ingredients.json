@@ -1,0 +1,13 @@
+{
+  "values": [
+    "exquisito:midnight_berries",
+    {
+      "id": "byg:nightshade_berries",
+      "required": false
+    },
+    {
+      "id": "betterend:shadow_berry_raw",
+      "required": false
+    }
+  ]
+}

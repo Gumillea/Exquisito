@@ -1,0 +1,6 @@
+{
+  "parent": "exquisito:block/imaginal_capsule_activated",
+  "textures": {
+    "cross": "exquisito:block/starcloud_bush_age2"
+  }
+}

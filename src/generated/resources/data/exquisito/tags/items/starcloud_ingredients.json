@@ -1,0 +1,13 @@
+{
+  "values": [
+    "exquisito:starcloud_bulbs",
+    {
+      "id": "betterend:blossom_berry",
+      "required": false
+    },
+    {
+      "id": "byg:ether_bulbs",
+      "required": false
+    }
+  ]
+}

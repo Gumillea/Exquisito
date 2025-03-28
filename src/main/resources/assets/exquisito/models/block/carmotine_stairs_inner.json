@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "exquisito:block/carmotine_block",
+    "side": "exquisito:block/carmotine_block",
+    "top": "exquisito:block/carmotine_block"
+  }
+}

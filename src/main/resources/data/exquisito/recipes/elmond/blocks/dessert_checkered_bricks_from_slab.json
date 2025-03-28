@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    " A ",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:dessert_checkered_brick_slab"
+    }
+  },
+  "result": {
+    "item": "exquisito:dessert_checkered_bricks"
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "exquisito:block/dessert_checkered_bricks",
+		"particle": "exquisito:block/dessert_checkered_bricks"
+	},
+	"elements": [
+		{
+			"name": "wall",
+			"from": [5, 0, 0],
+			"to": [11, 14, 8],
+			"faces": {
+				"north": {"uv": [5, 2, 11, 16], "texture": "#0", "cullface": "north"},
+				"east": {"uv": [0, 2, 8, 16], "texture": "#0"},
+				"west": {"uv": [8, 2, 16, 16], "texture": "#0"},
+				"up": {"uv": [5, 8, 11, 16], "texture": "#0"},
+				"down": {"uv": [5, 4, 11, 12], "texture": "#0", "cullface": "down"}
+			}
+		}
+	]
+}

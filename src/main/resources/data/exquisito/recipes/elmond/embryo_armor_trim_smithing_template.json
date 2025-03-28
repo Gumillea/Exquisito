@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "forge:gems/diamond"
+    },
+    "B": {
+      "item": "exquisito:embryo_armor_trim_smithing_template"
+    },
+    "C": [
+      {
+        "item": "exquisito:carmotine_block"
+      },
+      {
+        "item": "exquisito:carmotine_pillar"
+      }
+    ]
+  },
+  "pattern": [
+    "ABA",
+    "ACA",
+    "AAA"
+  ],
+  "result": {
+    "item": "exquisito:embryo_armor_trim_smithing_template",
+    "count": 2
+  }
+}

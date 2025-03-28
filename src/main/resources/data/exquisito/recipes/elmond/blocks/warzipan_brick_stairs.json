@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    "A  ",
+    "AA ",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:warzipan_bricks"
+    }
+  },
+  "result": {
+    "item": "exquisito:warzipan_brick_stairs",
+    "count": 4
+  }
+}

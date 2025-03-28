@@ -1,0 +1,7 @@
+{
+  "asset_id": "exquisito:knot",
+  "description": {
+    "translate": "trim_pattern.exquisito.knot"
+  },
+  "template_item": "exquisito:knot_armor_trim_smithing_template"
+}

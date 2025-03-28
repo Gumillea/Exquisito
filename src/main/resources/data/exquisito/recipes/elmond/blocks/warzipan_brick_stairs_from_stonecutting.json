@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:stonecutting",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "ingredient": {
+    "item": "exquisito:warzipan_bricks"
+  },
+  "result": "exquisito:warzipan_brick_stairs",
+  "count": 1
+}

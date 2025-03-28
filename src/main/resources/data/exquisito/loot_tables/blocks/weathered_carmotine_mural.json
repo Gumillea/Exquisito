@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "exquisito:knot_armor_trim_smithing_template",
+          "weight": 1,
+          "conditions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "exquisito:embryo_armor_trim_smithing_template",
+          "weight": 1
+        }
+      ],
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ],
+  "random_sequence": "exquisito:weathered_carmotine_mural"
+}

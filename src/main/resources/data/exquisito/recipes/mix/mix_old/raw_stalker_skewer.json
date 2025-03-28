@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:zure_berry"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_zure_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "enlightened_end:cerulichen"
+    },
+    {
+      "item": "enlightened_end:raw_stalker"
+    },
+    {
+      "item": "enlightened_end:zure_berry"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "exquisito:raw_stalker_skewer",
+    "count": 2
+  }
+}

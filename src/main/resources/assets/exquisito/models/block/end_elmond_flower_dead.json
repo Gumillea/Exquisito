@@ -1,0 +1,6 @@
+{
+  "parent": "exquisito:block/template_elmond_flower",
+  "textures": {
+    "texture": "exquisito:block/end_elmond_flower_dead"
+  }
+}

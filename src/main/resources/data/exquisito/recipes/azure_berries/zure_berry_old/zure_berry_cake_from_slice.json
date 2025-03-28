@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:item_exists",
+          "item": "enlightened_end:zure_berry"
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_zure_berry_flavor"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    },
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    },
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    },
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    },
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    },
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    },
+    {
+      "item": "exquisito:zure_berry_cake_slice"
+    }
+  ],
+  "result": {
+    "item": "exquisito:zure_berry_cake"
+  }
+}

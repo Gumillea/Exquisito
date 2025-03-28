@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "exquisito:block/carmotine_block",
+    "top": "exquisito:block/carmotine_block",
+    "side": "exquisito:block/carmotine_block"
+  }
+}

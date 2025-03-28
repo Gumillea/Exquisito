@@ -1,0 +1,9 @@
+// 1.20.1	2025-03-15T12:46:10.1937274	Tags for minecraft:block mod id exquisito
+76f23e5c386e7d8a273783ed2f98e4751a06c8b6 data/exquisito/tags/blocks/ennegel_replaceable.json
+2777fcdfea5aca7766ecdbc4e3f14a05fa9c94db data/minecraft/tags/blocks/climbable.json
+19c5fc3c5695d8a9646bc78fee908435005e57e3 data/minecraft/tags/blocks/mineable/hoe.json
+2909853babfbc318e6ffbf8ab68a6a451f3b84ba data/minecraft/tags/blocks/mineable/pickaxe.json
+99ef15d9ed4bbce7685e096d03b73b8967aa6704 data/minecraft/tags/blocks/mineable/shovel.json
+b8e3229b2e3107823951b44d84f55eec0117b99b data/minecraft/tags/blocks/slabs.json
+eec79303b09984adb71e4e54c2d7a5509c00d8d1 data/minecraft/tags/blocks/stairs.json
+5a9958a151a019340c706cf40fe648cd0abdc8ed data/minecraft/tags/blocks/walls.json

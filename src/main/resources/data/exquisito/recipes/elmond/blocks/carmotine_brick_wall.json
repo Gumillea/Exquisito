@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    "AAA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:carmotine_bricks"
+    }
+  },
+  "result": {
+    "item": "exquisito:carmotine_brick_wall",
+    "count": 6
+  }
+}

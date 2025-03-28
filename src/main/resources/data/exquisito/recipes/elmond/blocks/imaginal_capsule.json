@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "exquisito:config",
+      "value": "enable_elmond_flavor"
+    }
+  ],
+  "pattern": [
+    "ABA",
+    "CDC",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      {
+        "item": "exquisito:carmotine_block"
+      },
+      {
+        "item": "exquisito:carmotine_pillar"
+      },
+      {
+        "item": "exquisito:carmotine_bricks"
+      }
+    ],
+    "B": {
+      "item": "exquisito:abandoned_core"
+    },
+    "C": {
+      "tag": "forge:gems/diamond"
+    },
+    "D": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "exquisito:imaginal_capsule"
+  }
+}

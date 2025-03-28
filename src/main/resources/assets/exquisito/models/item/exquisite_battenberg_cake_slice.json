@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "exquisito:item/exquisite_battenberg_cake_slice"
+  }
+}

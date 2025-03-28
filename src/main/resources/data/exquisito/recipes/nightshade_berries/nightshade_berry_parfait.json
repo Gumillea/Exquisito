@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:and",
+      "values": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "exquisito:midnight_ingredients"
+          }
+        },
+        {
+          "type": "exquisito:config",
+          "value": "enable_nightshade_berry_flavor"
+        }
+      ]
+    }
+  ],
+  "pattern": [
+    "BAB",
+    "CDC",
+    " E "
+  ],
+  "key": {
+    "A": {
+      "item": "exquisito:nightshade_berry_ice_cream"
+    },
+    "B": {
+      "tag": "exquisito:midnight_ingredients"
+    },
+    "C": {
+      "item": "neapolitan:chocolate_bar"
+    },
+    "D": {
+      "item": "neapolitan:chocolate_ice_cream"
+    },
+    "E": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "exquisito:nightshade_berry_parfait"
+  }
+}

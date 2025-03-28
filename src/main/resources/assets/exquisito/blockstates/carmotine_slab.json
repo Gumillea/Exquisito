@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "exquisito:block/carmotine_slab" },
+    "type=top": { "model": "exquisito:block/carmotine_slab_top" },
+    "type=double": { "model": "exquisito:block/carmotine_slab_double" }
+  }
+}

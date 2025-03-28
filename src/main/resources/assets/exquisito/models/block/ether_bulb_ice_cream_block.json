@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "exquisito:block/ether_bulb_ice_cream_block"
+  }
+}

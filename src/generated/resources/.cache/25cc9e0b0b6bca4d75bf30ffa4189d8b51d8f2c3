@@ -1,0 +1,11 @@
+// 1.20.1	2025-03-28T20:39:33.8970784	Tags for minecraft:item mod id exquisito
+35a65b19cbc113070714005bfae81bee10152360 data/exquisito/tags/items/midnight_ingredients.json
+b4cc0642cc95aece33ec9cce364d245dd186c647 data/exquisito/tags/items/resonance_foods.json
+5e96fcfde6c509fc7b159c6fdb4bb468bbf8f817 data/exquisito/tags/items/starcloud_ingredients.json
+7fcd098576bf787aff041d624c3aeee2f1997ee6 data/forge/tags/items/fruits.json
+b8e3229b2e3107823951b44d84f55eec0117b99b data/minecraft/tags/items/slabs.json
+eec79303b09984adb71e4e54c2d7a5509c00d8d1 data/minecraft/tags/items/stairs.json
+85006d0537635921dd13780c934b45b6ca795fa2 data/minecraft/tags/items/trim_materials.json
+c74352195b0a948a77ea0135ed2567ec05785ef7 data/minecraft/tags/items/trim_templates.json
+5a9958a151a019340c706cf40fe648cd0abdc8ed data/minecraft/tags/items/walls.json
+298e3733db6970d421c1e82d237ae64bce8e893f data/neapolitan/tags/items/ice_cream.json
