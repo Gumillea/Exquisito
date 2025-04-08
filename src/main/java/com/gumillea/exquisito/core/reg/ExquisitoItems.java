@@ -133,7 +133,7 @@ public class ExquisitoItems {
 
                 .addItemsAfter(modLoaded(Items.RABBIT_STEW, ModCompat.EED), FUSCHIA_SMOOTHIE_BOWL, ENDERNEATH_SALAD)
 
-                .addItemsAfter(of(Items.MILK_BUCKET), ETHER_BULB_MILKSHAKE, NIGHTSHADE_BERRY_MILKSHAKE)
+                .addItemsAfter(of(Items.MILK_BUCKET), ETHER_BULB_MILKSHAKE, NIGHTSHADE_BERRY_MILKSHAKE, ETHER_BULB_PARFAIT, NIGHTSHADE_BERRY_PARFAIT)
                 .addItemsAfter(modLoaded(Items.MILK_BUCKET, ModCompat.EED), JELLY_RING_MILKSHAKE, ZURE_BERRY_MILKSHAKE)
                 .addItemsAfter(of(Items.MILK_BUCKET), CHORUS_MILKSHAKE, WARZIPAN_MILKSHAKE)
 

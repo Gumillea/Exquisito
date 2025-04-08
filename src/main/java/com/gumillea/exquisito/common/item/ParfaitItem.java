@@ -186,4 +186,9 @@ public class ParfaitItem extends Item {
         return false;
     }
 
+    @Override
+    public boolean isEnchantable(ItemStack stack) {
+        return false;
+    }
+
 }
