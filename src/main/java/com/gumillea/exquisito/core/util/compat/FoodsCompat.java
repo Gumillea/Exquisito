@@ -35,15 +35,19 @@ public class FoodsCompat {
 
             if (ModList.get().isLoaded(ModCompat.ED) && ExquisitoConfig.Common.ENDS_DELIGHT_MODIFICATION.get()) {
                 List<FoodProperties> endsDelightFoods = Arrays.asList(
-                        FoodList.BubbleTea,
-                        FoodList.ChorusCookie,
-                        FoodList.ChorusFruitGrain,
-                        FoodList.ChorusFruitPopsicle,
-                        FoodList.ChorusFruitWine,
-                        FoodList.ChorusFruitMilkTea,
-                        FoodList.ChorusSauce,
-                        FoodList.EndMixedSalad,
-                        FoodList.StuffedRiceCake
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_grain"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "bubble_tea"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_wine"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_pie_slice"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "stuffed_rice_cake"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "ender_sauce"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_sauce"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_milk_tea"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_flower_tea"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_popsicle"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "stir_fried_shulker_meat"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "dragon_breath_and_chorus_soup"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_cookie"))).foodProperties
                 );
                 chorusFoods.addAll(endsDelightFoods);
 
@@ -99,10 +103,12 @@ public class FoodsCompat {
             }
 
             for (FoodProperties properties : chorusFoods) {
-                if (properties.getNutrition() < 5){
-                    properties.effects.add(Pair.of(() -> new MobEffectInstance(resonance, 200), 1.0F));
-                } else {
-                    properties.effects.add(Pair.of(() -> new MobEffectInstance(resonance, 400), 1.0F));
+                if (properties != null) {
+                    if (properties.getNutrition() < 5){
+                        properties.effects.add(Pair.of(() -> new MobEffectInstance(resonance, 200), 1.0F));
+                    } else {
+                        properties.effects.add(Pair.of(() -> new MobEffectInstance(resonance, 400), 1.0F));
+                    }
                 }
             }
         }
