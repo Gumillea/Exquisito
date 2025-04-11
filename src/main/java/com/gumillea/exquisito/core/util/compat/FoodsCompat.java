@@ -41,7 +41,7 @@ public class FoodsCompat {
                         FoodList.ChorusFruitPopsicle,
                         FoodList.ChorusFruitWine,
                         FoodList.ChorusFruitMilkTea,
-                        FoodList.EnderSauce,
+                        FoodList.ChorusSauce,
                         FoodList.EndMixedSalad,
                         FoodList.StuffedRiceCake
                 );

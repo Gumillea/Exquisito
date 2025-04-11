@@ -127,7 +127,7 @@ dependencies {
 
     implementation fg.deobf("curse.maven:enlightend-502786:4880586")
     implementation fg.deobf("curse.maven:farmers-delight-398521:5051242")
-    implementation fg.deobf("curse.maven:ends-delight-662675:4678069")
+    implementation fg.deobf("curse.maven:ends-delight-662675:6180421")
     implementation fg.deobf("curse.maven:collectors-reap-807101:6124041")
     implementation fg.deobf("curse.maven:berry-good-355589:5228437")
 
