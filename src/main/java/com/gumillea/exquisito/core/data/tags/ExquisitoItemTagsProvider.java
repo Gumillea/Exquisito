@@ -13,7 +13,6 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
@@ -62,8 +61,9 @@ public class ExquisitoItemTagsProvider extends ItemTagsProvider {
                 .addOptional(ModCompat.BLOSSOM_BERRY)
                 .addOptional(ModCompat.ETHER_BULB);
 
-        this.tag(ExquisitoItemTags.RESONANCE_FOODS).add(
-                        Items.CHORUS_FRUIT);
+        this.tag(ExquisitoItemTags.CHORUS_FRUITS).add(
+                 Items.CHORUS_FRUIT)
+                .addOptional(ModCompat.CHORUS_FRUIT_GRAIN);
     }
 }
 

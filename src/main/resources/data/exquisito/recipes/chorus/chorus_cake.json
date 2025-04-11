@@ -22,7 +22,7 @@
       "item": "minecraft:wheat"
     },
     "D": {
-      "item": "minecraft:chorus_fruit"
+      "tag": "forge:chorus_fruits"
     },
     "E": {
       "tag": "forge:eggs"

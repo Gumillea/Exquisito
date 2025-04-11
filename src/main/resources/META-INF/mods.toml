@@ -4,7 +4,7 @@ loaderVersion="[43,)"
 license="MIT"
 [[mods]]
 modId="exquisito"
-version="2.5.1"
+version="2.5.2"
 displayName="Exquisito"
 logoFile="icon.png"
 authors="Gumillea"

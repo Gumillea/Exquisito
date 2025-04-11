@@ -14,7 +14,7 @@
       "item": "exquisito:warzipan"
     },
     {
-      "item": "minecraft:chorus_fruit"
+      "tag": "forge:chorus_fruits"
     },
     {
       "tag": "forge:fruits/banana"

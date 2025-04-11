@@ -1,7 +1,7 @@
-// 1.20.1	2025-03-28T20:39:33.8970784	Tags for minecraft:item mod id exquisito
+// 1.20.1	2025-04-11T14:43:43.6196397	Tags for minecraft:item mod id exquisito
 35a65b19cbc113070714005bfae81bee10152360 data/exquisito/tags/items/midnight_ingredients.json
-b4cc0642cc95aece33ec9cce364d245dd186c647 data/exquisito/tags/items/resonance_foods.json
 5e96fcfde6c509fc7b159c6fdb4bb468bbf8f817 data/exquisito/tags/items/starcloud_ingredients.json
+2ba388c4d9497179ac3d17fb94383ffd5ecffffc data/forge/tags/items/chorus_fruits.json
 7fcd098576bf787aff041d624c3aeee2f1997ee6 data/forge/tags/items/fruits.json
 b8e3229b2e3107823951b44d84f55eec0117b99b data/minecraft/tags/items/slabs.json
 eec79303b09984adb71e4e54c2d7a5509c00d8d1 data/minecraft/tags/items/stairs.json

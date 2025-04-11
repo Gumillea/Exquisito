@@ -12,6 +12,7 @@ public class ExquisitoItemTags {
     public static final TagKey<Item> RESONANCE_FOODS = itemTag("resonance_foods");
 
     public static final TagKey<Item> FRUITS = TagUtil.itemTag("forge", "fruits");
+    public static final TagKey<Item> CHORUS_FRUITS = TagUtil.itemTag("forge", "chorus_fruits");
 
     private static TagKey<Item> itemTag(String name) {
         return TagUtil.itemTag(Exquisito.MODID, name);

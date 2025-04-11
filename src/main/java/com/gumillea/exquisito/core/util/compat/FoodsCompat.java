@@ -45,8 +45,9 @@ public class FoodsCompat {
                         Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_milk_tea"))).foodProperties,
                         Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_flower_tea"))).foodProperties,
                         Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_fruit_popsicle"))).foodProperties,
-                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "stir_fried_shulker_meat"))).foodProperties,
                         Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "dragon_breath_and_chorus_soup"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "assorted_salad"))).foodProperties,
+                        Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "end_mixed_salad"))).foodProperties,
                         Objects.requireNonNull(ForgeRegistries.ITEMS.getValue(new ResourceLocation(ModCompat.ED, "chorus_cookie"))).foodProperties
                 );
                 chorusFoods.addAll(endsDelightFoods);
