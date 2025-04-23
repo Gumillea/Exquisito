@@ -8,7 +8,7 @@
   ],
   "ingredients": [
     {
-      "tag": "forge:chorus_fruits"
+      "tag": "forge:fruits/chorus"
     },
     {
       "tag": "forge:crops/wheat"

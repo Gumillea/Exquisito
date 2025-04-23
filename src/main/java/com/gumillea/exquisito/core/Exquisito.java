@@ -5,7 +5,6 @@ import com.gumillea.exquisito.core.data.ExquisitoSpriteSourceProvider;
 import com.gumillea.exquisito.core.data.modifiers.ExquisitoLootModifierProvider;
 import com.gumillea.exquisito.core.data.tags.*;
 import com.gumillea.exquisito.core.reg.*;
-import com.gumillea.exquisito.core.util.compat.FoodsCompat;
 import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
 import com.teamabnormals.gallery.core.data.client.GalleryAssetsRemolderProvider;
 import com.teamabnormals.gallery.core.data.client.GalleryItemModelProvider;
@@ -63,7 +62,6 @@ public class Exquisito
         event.enqueueWork(() -> {
             ExquisitoCauldronInteractions.registerCauldronInteractions();
             ExquisitoCompostableItems.registerCompostableItems();
-            FoodsCompat.modifyFoods();
         });
     }
 

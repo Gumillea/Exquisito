@@ -3,6 +3,7 @@ package com.gumillea.exquisito.core.util.compat;
 import net.minecraft.resources.ResourceLocation;
 
 public class ModCompat {
+    public static final String AU = "autumnity";
     public static final String B = "byg";
     public static final String BG = "berry_good";
     public static final String BE = "betterend";
