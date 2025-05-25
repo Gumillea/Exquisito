@@ -17,19 +17,23 @@ public class ModCompat {
     public static final String VC = "vanillacookbook";
 
     //Resource Locations
-    public static ResourceLocation RINGLING_RESOURCE = new ResourceLocation(EED, "ringling");
-    public static ResourceLocation STALKER_RESOURCE = new ResourceLocation(EED, "stalker");
-    public static ResourceLocation SQUELCHER_RESOURCE = new ResourceLocation(EED, "squelcher");
+    public static ResourceLocation RINGLING_RESOURCE = id(EED, "ringling");
+    public static ResourceLocation STALKER_RESOURCE = id(EED, "stalker");
+    public static ResourceLocation SQUELCHER_RESOURCE = id(EED, "squelcher");
 
-    public static ResourceLocation NIGHTSHADE_BERRY = new ResourceLocation(B, "nightshade_berries");
-    public static ResourceLocation ETHER_BULB = new ResourceLocation(B, "ether_bulbs");
-    public static ResourceLocation BLOSSOM_BERRY = new ResourceLocation(BE, "blossom_berry");
-    public static ResourceLocation SHADOW_BERRY = new ResourceLocation(BE, "shadow_berry_raw");
-    public static ResourceLocation CHORUS_FRUIT_GRAIN = new ResourceLocation(ED, "chorus_fruit_grain");
+    public static ResourceLocation NIGHTSHADE_BERRY = id(B, "nightshade_berries");
+    public static ResourceLocation ETHER_BULB = id(B, "ether_bulbs");
+    public static ResourceLocation BLOSSOM_BERRY = id(BE, "blossom_berry");
+    public static ResourceLocation SHADOW_BERRY = id(BE, "shadow_berry_raw");
+    public static ResourceLocation CHORUS_FRUIT_GRAIN = id(ED, "chorus_fruit_grain");
 
-    public static final ResourceLocation CAKE_SLICE = new ResourceLocation(ModCompat.FD, "cake_slice");
-    public static final ResourceLocation PIE_SLICE = new ResourceLocation(ModCompat.FD, "chocolate_pie_slice");
-    public static final ResourceLocation GUMMY = new ResourceLocation(ModCompat.CR, "lime_gummy");
+    public static final ResourceLocation CAKE_SLICE = id(FD, "cake_slice");
+    public static final ResourceLocation PIE_SLICE = id(FD, "chocolate_pie_slice");
+    public static final ResourceLocation GUMMY = id(CR, "lime_gummy");
+
+    public static ResourceLocation id (String modid, String path) {
+        return new ResourceLocation(modid, path);
+    }
 
 
 }

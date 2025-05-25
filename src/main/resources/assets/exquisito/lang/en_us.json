@@ -67,8 +67,6 @@
     "effect.exquisito.love_deluxe.description": "Prevents most effects except Vanilla Scent and this effect, healing the user on a successful prevention.",
     "effect.exquisito.monkey_majik": "Monkey Majik",
     "effect.exquisito.monkey_majik.description": "The user can randomly teleport the attack target, and if the target has effects, it will randomly turn one of them into an effect cloud to be released, otherwise it will create a banana peel instead.",
-    "effect.exquisito.oblivion": "Oblivion",
-    "effect.exquisito.muzai_moratorium": "Muzai Moratorium",
 
     "item.exquisito.chorus_ice_cream": "Chorus Fruit Ice Cream",
     "item.exquisito.chorus_cake": "Chorus Fruit Cake",
@@ -154,5 +152,9 @@
     "painting.exquisito.overlook.author": "Adi Constantin, Gumillea",
     "painting.exquisito.overlook.title": "Overlook",
 
-    "tooltip.exquisito.lollipop":  "Has a 50% chance of not consuming after eating"
+    "tooltip.exquisito.lollipop":  "Has a 50% chance of not consuming after eating",
+
+    "jei.exquisito.elmond.desc": "∀lmond is dropped by breaking the ∀bandoned Vessel in the Inverted Ruins. It can be planted on End Stone in the End and on Farmland in the Overworld.",
+    "jei.exquisito.abandoned_core.desc": "∀bandoned Core is mainly dropped by breaking the ∀bandoned Vessel in the Inverted Ruins. It can also rarely be obtained when imaginal crops are harvested.",
+    "jei.exquisito.imaginal_crops.desc": "Plant the Sweet and Glow Berries into the Imaginal Capsule to transform them into their respective imaginal versions."
 }

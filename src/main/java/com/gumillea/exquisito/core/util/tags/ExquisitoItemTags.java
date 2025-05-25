@@ -9,10 +9,12 @@ public class ExquisitoItemTags {
     public static final TagKey<Item> MIDNIGHT_INGREDIENTS = itemTag("midnight_ingredients");
     public static final TagKey<Item> STARCLOUD_INGREDIENTS = itemTag("starcloud_ingredients");
 
-    public static final TagKey<Item> RESONANCE_FOODS = itemTag("resonance_foods");
-
     public static final TagKey<Item> FRUITS = TagUtil.itemTag("forge", "fruits");
-    public static final TagKey<Item> CHORUS_FRUITS = TagUtil.itemTag("forge", "chorus_fruits");
+    public static final TagKey<Item> BERRIES = TagUtil.itemTag("forge", "berries");
+    public static final TagKey<Item> CHORUS_FRUITS = TagUtil.itemTag("forge", "fruits/chorus");
+
+    public static final TagKey<Item> RESONANCE_SOURCES = TagUtil.itemTag("exquisito", "resonance_sources");
+
 
     private static TagKey<Item> itemTag(String name) {
         return TagUtil.itemTag(Exquisito.MODID, name);

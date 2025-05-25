@@ -7,6 +7,7 @@ import com.gumillea.exquisito.core.ExquisitoConfig;
 import com.gumillea.exquisito.core.reg.ExquisitoEffects;
 import com.gumillea.exquisito.core.reg.ExquisitoItems;
 import com.gumillea.exquisito.core.util.tags.ExquisitoEntityTypeTags;
+import com.gumillea.exquisito.core.util.tags.ExquisitoItemTags;
 import com.teamabnormals.neapolitan.common.entity.projectile.BananaPeel;
 import com.teamabnormals.neapolitan.core.other.tags.NeapolitanMobEffectTags;
 import com.teamabnormals.neapolitan.core.registry.NeapolitanEntityTypes;
@@ -45,6 +46,7 @@ import net.minecraftforge.registries.tags.ITagManager;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Objects;
 
 @Mod.EventBusSubscriber(modid = Exquisito.MODID)
 public class ExquisitoEvents {
@@ -232,6 +234,7 @@ public class ExquisitoEvents {
 
     @SubscribeEvent
     public static void onEffectApplicable(MobEffectEvent.Applicable event) {
+
         MobEffect effect = event.getEffectInstance().getEffect();
         LivingEntity entity = event.getEntity();
         Level level = entity.level();
@@ -348,6 +351,21 @@ public class ExquisitoEvents {
                 level.removeBlock(pos, false);
             } else {
             event.setCanceled(true);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void onItemUsed(LivingEntityUseItemEvent.Finish event) {
+        if (!ExquisitoConfig.Common.FOOD_MODIFICATION.get()) return;
+
+        ItemStack stack = event.getItem();
+        Entity user = event.getEntity();
+        if (user instanceof LivingEntity living && stack.isEdible()) {
+            int nutrition = Objects.requireNonNull(stack.getFoodProperties(living)).getNutrition();
+            int duration = nutrition < 10 ? 300 : 600;
+            if (ExquisitoConfig.Common.CHORUS_FLAVOR.get() && stack.is(ExquisitoItemTags.RESONANCE_SOURCES)){
+                living.addEffect(new MobEffectInstance(ExquisitoEffects.RESONANCE.get(), duration));
             }
         }
     }

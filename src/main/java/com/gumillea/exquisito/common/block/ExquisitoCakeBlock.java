@@ -51,15 +51,9 @@ public class ExquisitoCakeBlock extends FlavoredCakeBlock {
                     ExquisitoBlocks.ZURE_BERRY_CAKE.get(), ExquisitoItems.ZURE_BERRY_CAKE_SLICE
             );
 
-            Optional.ofNullable(cakeSliceMap.get(block))
-                    .ifPresent(sliceSupplier -> ItemUtils.spawnItemEntity(
-                            world, new ItemStack(sliceSupplier.get()),
-                            pos.getX() + (bites * 0.1), pos.getY() + 0.2, pos.getZ() + 0.5,
-                            -0.05, 0, 0
-                    ));
+            Optional.ofNullable(cakeSliceMap.get(block)).ifPresent(sliceSupplier -> ItemUtils.spawnItemEntity(world, new ItemStack(sliceSupplier.get()), pos.getX() + (bites * 0.1), pos.getY() + 0.2, pos.getZ() + 0.5, -0.05, 0, 0));
 
             world.playSound(null, pos, SoundEvents.WOOL_BREAK, SoundSource.PLAYERS, 0.8F, 0.8F);
-
             world.gameEvent(player, GameEvent.BLOCK_CHANGE, pos);
             player.awardStat(Stats.ITEM_USED.get(item));
 

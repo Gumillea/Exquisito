@@ -9,6 +9,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
@@ -36,7 +37,7 @@ public class ExquisitoItemTagsProvider extends ItemTagsProvider {
                ExquisitoItems.ETHER_BULB_ICE_CREAM.get()
         );
 
-        this.tag(ExquisitoItemTags.FRUITS).add(
+        this.tag(ExquisitoItemTags.BERRIES).add(
                 ExquisitoItems.MIDNIGHT_BERRIES.get(),
                 ExquisitoItems.STARCLOUD_BULBS.get()
         );
@@ -64,6 +65,38 @@ public class ExquisitoItemTagsProvider extends ItemTagsProvider {
         this.tag(ExquisitoItemTags.CHORUS_FRUITS).add(
                  Items.CHORUS_FRUIT)
                 .addOptional(ModCompat.CHORUS_FRUIT_GRAIN);
+
+        this.tag(ExquisitoItemTags.RESONANCE_SOURCES)
+                .addTag(ExquisitoItemTags.CHORUS_FRUITS)
+                .addOptional(ed("chorus_fruit_milk_tea"))
+                .addOptional(ed("chorus_fruit_popsicle"))
+                .addOptional(ed("chorus_fruit_wine"))
+                .addOptional(ed("bubble_tea"))
+                .addOptional(ed("dragon_breath_and_chorus_soup"))
+                .addOptional(ed("end_barbecue_stick"))
+                .addOptional(ed("chorus_fruit_pie_slice"))
+                .addOptional(ed("assorted_salad"))
+                .addOptional(ed("end_mixed_salad"))
+                .addOptional(ed("stuffed_rice_cake"))
+                .addOptional(ed("chorus_cookie"))
+                .addOptional(ed("roasted_dragon_steak"))
+                .addOptional(ed("dragon_leg_with_sauce"))
+                .addOptional(ed("chorus_sauce"))
+
+                .addOptional(erd("chorus_stew"))
+                .addOptional(erd("chorus_stew_wood"))
+                .addOptional(erd("chorus_juice"))
+                .addOptional(erd("chorus_pie_slice"))
+        ;
     }
+
+    public static ResourceLocation ed (String path) {
+        return ModCompat.id(ModCompat.ED, path);
+    }
+
+    public static ResourceLocation erd (String path) {
+        return ModCompat.id(ModCompat.ERD, path);
+    }
+
 }
 
