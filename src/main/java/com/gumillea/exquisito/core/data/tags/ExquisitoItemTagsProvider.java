@@ -1,6 +1,7 @@
 package com.gumillea.exquisito.core.data.tags;
 
 import com.gumillea.exquisito.core.Exquisito;
+import com.gumillea.exquisito.core.reg.ExquisitoBlocks;
 import com.gumillea.exquisito.core.reg.ExquisitoItems;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.gumillea.exquisito.core.util.tags.ExquisitoItemTags;
@@ -27,6 +28,11 @@ public class ExquisitoItemTagsProvider extends ItemTagsProvider {
         this.copy(BlockTags.SLABS, ItemTags.SLABS);
         this.copy(BlockTags.STAIRS, ItemTags.STAIRS);
         this.copy(BlockTags.WALLS, ItemTags.WALLS);
+        this.copy(BlockTags.PLANKS, ItemTags.PLANKS);
+
+        this.tag(ItemTags.STONE_CRAFTING_MATERIALS).add(
+                ExquisitoBlocks.CARMOTINE_BRICKS.get().asItem()
+        );
 
         this.tag(NeapolitanItemTags.ICE_CREAM).add(
                ExquisitoItems.CHORUS_ICE_CREAM.get(),

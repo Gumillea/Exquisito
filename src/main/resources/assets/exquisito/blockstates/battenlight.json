@@ -1,5 +1,6 @@
 {
   "variants": {
-    "": { "model": "exquisito:block/battenlight" }
+    "open=false": { "model": "exquisito:block/battenlight" },
+    "open=true": { "model": "exquisito:block/battenlight_open" }
   }
 }

@@ -22,6 +22,11 @@ public class ExquisitoBlockTagsProvider extends BlockTagsProvider {
         this.tag(BlockTags.CLIMBABLE).add(
                 ExquisitoBlocks.CARMOTINE_LADDER.get()
         );
+
+        this.tag(BlockTags.PLANKS).add(
+                ExquisitoBlocks.CARMOTINE_BLOCK.get()
+        );
+
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL).add(
                 ExquisitoBlocks.CHORUS_ICE_CREAM_BLOCK.get(),
                 ExquisitoBlocks.ETHER_BULB_ICE_CREAM_BLOCK.get(),

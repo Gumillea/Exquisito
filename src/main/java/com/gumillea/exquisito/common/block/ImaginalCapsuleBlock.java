@@ -3,8 +3,6 @@ package com.gumillea.exquisito.common.block;
 import com.gumillea.exquisito.core.reg.ExquisitoBlocks;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.teamabnormals.berry_good.core.registry.BGItems;
-import com.teamabnormals.neapolitan.common.block.StrawberryBushBlock;
-import com.teamabnormals.neapolitan.core.registry.NeapolitanItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -29,7 +27,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-public class ImaginalCapsuleBlock extends Block {
+public class ImaginalCapsuleBlock extends KarmotineBlock {
 
     public ImaginalCapsuleBlock(Properties properties) {
         super(properties);

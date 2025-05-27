@@ -2,6 +2,7 @@ package com.gumillea.exquisito.core.reg;
 
 import com.gumillea.exquisito.common.item.*;
 import com.gumillea.exquisito.core.Exquisito;
+import com.gumillea.exquisito.core.ExquisitoConfig;
 import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.teamabnormals.blueprint.core.util.item.CreativeModeTabContentsPopulator;
 import com.teamabnormals.blueprint.core.util.registry.BlockSubRegistryHelper;
@@ -120,37 +121,50 @@ public class ExquisitoItems {
 
     public static void setupTabEditors() {
         CreativeModeTabContentsPopulator.mod(Exquisito.MODID)
-                .tab(FOOD_AND_DRINKS)
-                .addItemsAfter(of(Items.GLOW_BERRIES), MIDNIGHT_BERRIES, STARCLOUD_BULBS)
+                .predicate(event -> ExquisitoConfig.Common.CHORUS_FLAVOR.get() && event.getTabKey() == FOOD_AND_DRINKS)
+                .addItemsAfter(of(Items.PUMPKIN_PIE), CHORUS_KHANOM_CHAN)
+                .addItemsBefore(of(Items.MILK_BUCKET), HALO_HALO)
+                .addItemsAfter(of(Items.MILK_BUCKET), CHORUS_MILKSHAKE, CHORUS_ICE_CREAM)
+                .addItemsAfter(of(Items.CAKE), CHORUS_CAKE)
+                .addItemsAfter(of(Items.COOKIE), CHORUS_COOKIE)
+
+                .predicate(event -> ExquisitoConfig.Common.ELMOND_FLAVOR.get() && event.getTabKey() == FOOD_AND_DRINKS)
                 .addItemsBefore(of(Items.COOKIE), WARZIPAN, JELLY_RING_WARZIPAN, ZURE_BERRY_WARZIPAN, ETHER_BULB_WARZIPAN, NIGHTSHADE_BERRY_WARZIPAN)
-                .addItemsAfter(modLoaded(NIGHTSHADE_BERRY_WARZIPAN, ModCompat.EED), JELLY_RING, JELLY_FILLED_CHOCOLATE)
-
-                .addItemsAfter(modLoaded(Items.COOKED_RABBIT, ModCompat.EED), RAW_STALKER_SKEWER, STALKER_SKEWER)
-
-                .addItemsAfter(of(Items.PUMPKIN_PIE), ETHER_LOLLIPOP, NIGHTSHADE_LOLLIPOP)
-                .addItemsAfter(of(Items.PUMPKIN_PIE), CHORUS_KHANOM_CHAN, BELOVED_BATTENBERG_CAKE, EXQUISITE_BATTENBERG_CAKE)
+                .addItemsAfter(of(Items.MILK_BUCKET), WARZIPAN_MILKSHAKE, WARZIPAN_ICE_CREAM)
+                .addItemsAfter(of(Items.PUMPKIN_PIE), BELOVED_BATTENBERG_CAKE, EXQUISITE_BATTENBERG_CAKE)
                 .addItemsAfter(modLoaded(EXQUISITE_BATTENBERG_CAKE, ModCompat.EED), ENLIGHTENED_BATTENBERG_CAKE)
 
-                .addItemsAfter(modLoaded(Items.RABBIT_STEW, ModCompat.EED), FUSCHIA_SMOOTHIE_BOWL, ENDERNEATH_SALAD)
+                .predicate(event -> ModList.get().isLoaded(ModCompat.EED) && ExquisitoConfig.Common.ZURE_BERRY_FLAVOR.get() && event.getTabKey() == FOOD_AND_DRINKS)
+                .addItemsAfter(of(Items.COOKED_RABBIT), RAW_STALKER_SKEWER, STALKER_SKEWER)
+                .addItemsAfter(of(Items.RABBIT_STEW), ENDERNEATH_SALAD)
+                .addItemsAfter(of(Items.MILK_BUCKET), ZURE_BERRY_MILKSHAKE, ZURE_BERRY_ICE_CREAM)
+                .addItemsAfter(of(Items.CAKE), ZURE_BERRY_CAKE)
+                .addItemsAfter(of(Items.COOKIE), ZURE_BERRY_COOKIE)
 
-                .addItemsAfter(of(Items.MILK_BUCKET), ETHER_BULB_MILKSHAKE, NIGHTSHADE_BERRY_MILKSHAKE, ETHER_BULB_PARFAIT, NIGHTSHADE_BERRY_PARFAIT)
-                .addItemsAfter(modLoaded(Items.MILK_BUCKET, ModCompat.EED), JELLY_RING_MILKSHAKE, ZURE_BERRY_MILKSHAKE)
-                .addItemsAfter(of(Items.MILK_BUCKET), CHORUS_MILKSHAKE, WARZIPAN_MILKSHAKE)
+                .predicate(event -> ModList.get().isLoaded(ModCompat.EED) && ExquisitoConfig.Common.JELLY_RING_FLAVOR.get() && event.getTabKey() == FOOD_AND_DRINKS)
+                .addItemsAfter(of(Items.COOKIE), JELLY_RING, JELLY_FILLED_CHOCOLATE)
+                .addItemsAfter(of(Items.RABBIT_STEW), FUSCHIA_SMOOTHIE_BOWL)
+                .addItemsAfter(of(Items.MILK_BUCKET), JELLY_RING_MILKSHAKE, JELLY_RING_ICE_CREAM)
+                .addItemsAfter(of(Items.CAKE), JELLY_RING_CAKE)
+                .addItemsAfter(of(Items.COOKIE), JELLY_RING_COOKIE)
 
-                .addItemsBefore(of(Items.MILK_BUCKET), HALO_HALO)
-                .addItemsAfter(of(Items.MILK_BUCKET), CHORUS_ICE_CREAM, WARZIPAN_ICE_CREAM)
-                .addItemsAfter(modLoaded(Items.MILK_BUCKET, ModCompat.EED), JELLY_RING_ICE_CREAM, ZURE_BERRY_ICE_CREAM)
-                .addItemsAfter(of(Items.MILK_BUCKET), ETHER_BULB_ICE_CREAM, NIGHTSHADE_BERRY_ICE_CREAM)
+                .predicate(event -> ExquisitoConfig.Common.ETHER_BULB_FLAVOR.get() && event.getTabKey() == FOOD_AND_DRINKS)
+                .addItemsAfter(of(Items.GLOW_BERRIES), STARCLOUD_BULBS)
+                .addItemsAfter(of(Items.PUMPKIN_PIE), ETHER_LOLLIPOP)
+                .addItemsBefore(of(Items.MILK_BUCKET), ETHER_BULB_PARFAIT)
+                .addItemsAfter(of(Items.MILK_BUCKET), ETHER_BULB_MILKSHAKE, ETHER_BULB_ICE_CREAM)
+                .addItemsAfter(of(Items.CAKE), ETHER_BULB_CAKE)
+                .addItemsAfter(of(Items.COOKIE), ETHER_BULB_COOKIE)
 
-                .addItemsAfter(of(Items.CAKE), CHORUS_CAKE)
-                .addItemsAfter(modLoaded(Items.CAKE, ModCompat.EED), JELLY_RING_CAKE, ZURE_BERRY_CAKE)
-                .addItemsAfter(of(Items.CAKE), ETHER_BULB_CAKE, NIGHTSHADE_BERRY_CAKE)
+                .predicate(event -> ExquisitoConfig.Common.NIGHTSHADE_BERRY_FLAVOR.get() && event.getTabKey() == FOOD_AND_DRINKS)
+                .addItemsAfter(of(Items.GLOW_BERRIES), MIDNIGHT_BERRIES)
+                .addItemsAfter(of(Items.PUMPKIN_PIE), NIGHTSHADE_LOLLIPOP)
+                .addItemsBefore(of(Items.MILK_BUCKET), NIGHTSHADE_BERRY_PARFAIT)
+                .addItemsAfter(of(Items.MILK_BUCKET), NIGHTSHADE_BERRY_MILKSHAKE, NIGHTSHADE_BERRY_ICE_CREAM)
+                .addItemsAfter(of(Items.CAKE), NIGHTSHADE_BERRY_CAKE)
+                .addItemsAfter(of(Items.COOKIE), NIGHTSHADE_BERRY_COOKIE)
 
-                .addItemsAfter(of(Items.COOKIE), CHORUS_COOKIE)
-                .addItemsAfter(modLoaded(Items.COOKIE, ModCompat.EED), JELLY_RING_COOKIE, ZURE_BERRY_COOKIE)
-                .addItemsAfter(of(Items.COOKIE), ETHER_BULB_COOKIE, NIGHTSHADE_BERRY_COOKIE)
-
-                .tab(INGREDIENTS)
+                .predicate(event -> ExquisitoConfig.Common.ELMOND_FLAVOR.get() && event.getTabKey() == INGREDIENTS)
                 .addItemsAfter(of(Items.HEART_OF_THE_SEA), ABANDONED_CORE)
                 .addItemsAfter(of(Items.POPPED_CHORUS_FRUIT), CARMOTINE)
                 .addItemsAfter(of(Items.SLIME_BALL), ELMOND)

@@ -1,6 +1,7 @@
 package com.gumillea.exquisito.common.block;
 
 import com.gumillea.exquisito.core.reg.ExquisitoBlocks;
+import com.gumillea.exquisito.core.reg.ExquisitoEffects;
 import com.gumillea.exquisito.core.reg.ExquisitoItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -50,6 +51,7 @@ public class ActivatedImaginalCapsuleBlock extends ImaginalCapsuleBlock implemen
     public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         int i = state.getValue(AGE);
         boolean flag = i == 5;
+        float chance = player.hasEffect(ExquisitoEffects.MODULATION.get()) ? 0.1F : 0.033F;
 
         if (player.getItemInHand(hand).is(Items.SHEARS)) {
             level.setBlock(pos, ExquisitoBlocks.IMAGINAL_CAPSULE.get().defaultBlockState(), 3);
@@ -63,7 +65,7 @@ public class ActivatedImaginalCapsuleBlock extends ImaginalCapsuleBlock implemen
         } else if (i > 3) {
             int j = 1 + level.random.nextInt(2);
             popResource(level, pos.above(), new ItemStack(this.getCropItem(), j + (flag ? 1 : 0)));
-            if (player.getRandom().nextFloat() <= 0.033F) {
+            if (player.getRandom().nextFloat() <= chance) {
                 popResource(level, pos.above(), new ItemStack(ExquisitoItems.ABANDONED_CORE.get(), 1));
             }
             level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
@@ -100,6 +102,12 @@ public class ActivatedImaginalCapsuleBlock extends ImaginalCapsuleBlock implemen
     public void performBonemeal(ServerLevel serverLevel, RandomSource randomSource, BlockPos pos, BlockState state) {
         int i = Math.min(5, state.getValue(AGE) + 1);
         serverLevel.setBlock(pos, state.setValue(AGE, i), 2);
+    }
+
+    @Override
+    public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+        int age = state.getValue(AGE);
+        return age > 2 ? age * 3 : 0;
     }
 
 }
