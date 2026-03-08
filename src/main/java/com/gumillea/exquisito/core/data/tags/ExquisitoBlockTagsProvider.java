@@ -2,7 +2,9 @@ package com.gumillea.exquisito.core.data.tags;
 
 import com.gumillea.exquisito.core.Exquisito;
 import com.gumillea.exquisito.core.reg.ExquisitoBlocks;
+import com.gumillea.exquisito.core.util.compat.ModCompat;
 import com.gumillea.exquisito.core.util.tags.ExquisitoBlockTags;
+import com.gumillea.exquisito.core.util.tags.ExquisitoItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -80,5 +82,10 @@ public class ExquisitoBlockTagsProvider extends BlockTagsProvider {
                 .add(Blocks.END_STONE)
                 .addTag(BlockTags.DIRT)
                 .addTag(BlockTags.NYLIUM);
+        this.tag(ExquisitoBlockTags.RESONANCE_SOURCES)
+                .addOptional(ModCompat.id(ModCompat.ED, "chorus_fruit_pie"))
+                .addOptional(ModCompat.id(ModCompat.ERD, "chorus_pie"))
+                .addOptional(ModCompat.id(ModCompat.UE, "chorus_cake"));
     }
+
 }

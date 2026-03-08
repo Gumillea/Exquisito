@@ -1,0 +1,97 @@
+{
+  "values": [
+    "#forge:fruits/chorus",
+    {
+      "id": "ends_delight:chorus_fruit_milk_tea",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_popsicle",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_wine",
+      "required": false
+    },
+    {
+      "id": "ends_delight:bubble_tea",
+      "required": false
+    },
+    {
+      "id": "ends_delight:dragon_breath_and_chorus_soup",
+      "required": false
+    },
+    {
+      "id": "ends_delight:end_barbecue_stick",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_fruit_pie_slice",
+      "required": false
+    },
+    {
+      "id": "ends_delight:assorted_salad",
+      "required": false
+    },
+    {
+      "id": "ends_delight:end_mixed_salad",
+      "required": false
+    },
+    {
+      "id": "ends_delight:stuffed_rice_cake",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_cookie",
+      "required": false
+    },
+    {
+      "id": "ends_delight:roasted_dragon_steak",
+      "required": false
+    },
+    {
+      "id": "ends_delight:dragon_leg_with_sauce",
+      "required": false
+    },
+    {
+      "id": "ends_delight:chorus_sauce",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_stew",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_stew_wood",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_juice",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_pie_slice",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chorus_soda",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chorus_juice",
+      "required": false
+    },
+    {
+      "id": "vanillacookbook:chorus_cake_slice",
+      "required": false
+    },
+    {
+      "id": "unusualend:chorus_pie",
+      "required": false
+    },
+    {
+      "id": "unusualend:ender_stew",
+      "required": false
+    }
+  ]
+}

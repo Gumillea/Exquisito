@@ -12,6 +12,7 @@ public class ExquisitoItemTags {
     public static final TagKey<Item> FRUITS = TagUtil.itemTag("forge", "fruits");
     public static final TagKey<Item> BERRIES = TagUtil.itemTag("forge", "berries");
     public static final TagKey<Item> CHORUS_FRUITS = TagUtil.itemTag("forge", "fruits/chorus");
+    public static final TagKey<Item> KNIVES = TagUtil.itemTag("forge", "tools/knives");
 
     public static final TagKey<Item> RESONANCE_SOURCES = TagUtil.itemTag("exquisito", "resonance_sources");
 

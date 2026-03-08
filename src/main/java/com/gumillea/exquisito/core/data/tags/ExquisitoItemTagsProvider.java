@@ -93,7 +93,18 @@ public class ExquisitoItemTagsProvider extends ItemTagsProvider {
                 .addOptional(erd("chorus_stew_wood"))
                 .addOptional(erd("chorus_juice"))
                 .addOptional(erd("chorus_pie_slice"))
+
+                .addOptional(vc("chorus_soda"))
+                .addOptional(vc("chorus_juice"))
+                .addOptional(vc("chorus_cake_slice"))
+
+                .addOptional(ModCompat.id(ModCompat.UE, "chorus_pie"))
+                .addOptional(ModCompat.id(ModCompat.UE, "ender_stew"))
         ;
+    }
+
+    public static ResourceLocation vc (String path) {
+        return ModCompat.id(ModCompat.VC, path);
     }
 
     public static ResourceLocation ed (String path) {

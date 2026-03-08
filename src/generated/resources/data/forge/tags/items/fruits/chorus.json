@@ -1,0 +1,9 @@
+{
+  "values": [
+    "minecraft:chorus_fruit",
+    {
+      "id": "ends_delight:chorus_fruit_grain",
+      "required": false
+    }
+  ]
+}

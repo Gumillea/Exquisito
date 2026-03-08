@@ -1,5 +1,6 @@
-// 1.20.1	2025-05-27T16:04:21.6850402	Tags for minecraft:block mod id exquisito
+// 1.20.1	2025-05-28T17:02:11.749484	Tags for minecraft:block mod id exquisito
 76f23e5c386e7d8a273783ed2f98e4751a06c8b6 data/exquisito/tags/blocks/ennegel_replaceable.json
+95391db6b34d784f49267ad65a464d6f4b83b205 data/exquisito/tags/blocks/resonance_sources.json
 2777fcdfea5aca7766ecdbc4e3f14a05fa9c94db data/minecraft/tags/blocks/climbable.json
 19c5fc3c5695d8a9646bc78fee908435005e57e3 data/minecraft/tags/blocks/mineable/hoe.json
 2909853babfbc318e6ffbf8ab68a6a451f3b84ba data/minecraft/tags/blocks/mineable/pickaxe.json

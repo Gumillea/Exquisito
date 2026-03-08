@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "ends_delight:chorus_fruit_pie",
+      "required": false
+    },
+    {
+      "id": "endersdelight:chorus_pie",
+      "required": false
+    },
+    {
+      "id": "unusualend:chorus_cake",
+      "required": false
+    }
+  ]
+}

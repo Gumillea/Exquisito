@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.Block;
 
 public class ExquisitoBlockTags {
     public static final TagKey<Block> ENNEGEL_REPLACEABLE = blockTag("ennegel_replaceable");
+    public static final TagKey<Block> RESONANCE_SOURCES = blockTag("resonance_sources");
 
     private static TagKey<Block> blockTag(String name) {
         return TagUtil.blockTag(Exquisito.MODID, name);

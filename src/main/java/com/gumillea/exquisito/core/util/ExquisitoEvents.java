@@ -6,6 +6,8 @@ import com.gumillea.exquisito.core.Exquisito;
 import com.gumillea.exquisito.core.ExquisitoConfig;
 import com.gumillea.exquisito.core.reg.ExquisitoEffects;
 import com.gumillea.exquisito.core.reg.ExquisitoItems;
+import com.gumillea.exquisito.core.util.compat.ModCompat;
+import com.gumillea.exquisito.core.util.tags.ExquisitoBlockTags;
 import com.gumillea.exquisito.core.util.tags.ExquisitoEntityTypeTags;
 import com.gumillea.exquisito.core.util.tags.ExquisitoItemTags;
 import com.teamabnormals.neapolitan.common.entity.projectile.BananaPeel;
@@ -18,8 +20,11 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -27,8 +32,12 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.Vec3;
@@ -36,9 +45,11 @@ import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.event.entity.EntityTeleportEvent;
 import net.minecraftforge.event.entity.living.*;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.tags.ITagManager;
@@ -366,6 +377,25 @@ public class ExquisitoEvents {
             int duration = nutrition < 10 ? 300 : 600;
             if (ExquisitoConfig.Common.CHORUS_FLAVOR.get() && stack.is(ExquisitoItemTags.RESONANCE_SOURCES)){
                 living.addEffect(new MobEffectInstance(ExquisitoEffects.RESONANCE.get(), duration));
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void rightClickBlock(PlayerInteractEvent.RightClickBlock event) {
+        Level level = event.getLevel();
+        Player player = event.getEntity();
+        InteractionHand hand = event.getHand();
+        BlockState state = level.getBlockState(event.getPos());
+        Block block = state.getBlock();
+
+        if (!ExquisitoConfig.Common.FOOD_MODIFICATION.get()) return;
+
+        if (block.getStateDefinition().getProperties().stream().anyMatch(prop -> prop.getName().equals("bites"))) {
+            if (ModList.get().isLoaded(ModCompat.FD) && player.getItemInHand(hand).is(ExquisitoItemTags.KNIVES)) return;
+
+            if (ExquisitoConfig.Common.CHORUS_FLAVOR.get() && state.is(ExquisitoBlockTags.RESONANCE_SOURCES)) {
+                player.addEffect(new MobEffectInstance(ExquisitoEffects.RESONANCE.get(), 300));
             }
         }
     }
