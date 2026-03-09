@@ -49,7 +49,7 @@
     "block.exquisito.imaginal_capsule": "夢想のカプセル",
 
     "effect.exquisito.earendel": "明星",
-    "effect.exquisito.earendel.description": "発光効果と共にモブを遠隔で癒やし、それ以外の明るさ7以下の場所にいる敵をノックバックで押し出す。",
+    "effect.exquisito.earendel.description": "明るさ7以下の場所にいるモブを発光効果と共に遠隔で癒やし、効果を持たない敵を吹き飛ばす。",
     "effect.exquisito.fuchsia_goo": "護粘性",
     "effect.exquisito.fuchsia_goo.description": "この効果は近接攻撃によって広がり、大抵のダメージを無効化する代わりに、移動速度を低下させます。効果が切れると、上に吹き飛びます。",
     "effect.exquisito.morgoth": "冥走",
